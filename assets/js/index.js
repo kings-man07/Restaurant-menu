@@ -4,7 +4,7 @@
 const starters = JSON.parse(
 	"[" +
 		'{ "type":"separator", "description":"APPETIZERS" },' +
-		'{ "type":"food", "name":"CROSTINI", "description":"with diced tomatoes, onions, garlic and basil", "price":"₹12.00" },' +
+		'{ "type":"food", "name":"CROSTINI", "description":"with diced tomatoes, onions, garlic and basil", "price":"12.00" },' +
 		'{ "type":"food", "name":"NACHOS", "description":"with 2 dips of your choice, gratinated with cheese and sliced chicken", "price":"10.50" },' +
 		'{ "type":"separator", "description":"SALADS" },' +
 		'{ "type":"food", "name":"CHICKEN CHILI SALAD", "description":"mixed salad, fried sliced chicken marinated with honey and chili", "price":"25.00" },' +
@@ -74,8 +74,8 @@ let drinksbutton = document.getElementById("drinksbutton");
 
 let ni1 = document.getElementById("ni1");
 let ni2 = document.getElementById("ni2");
-// let ni3 = document.getElementById("ni3");
-// let ni4 = document.getElementById("ni4");
+let ni3 = document.getElementById("ni3");
+let ni4 = document.getElementById("ni4");
 
 startersbutton.addEventListener("click", (e) => {
 	setIndicator(0);
@@ -85,14 +85,14 @@ mainsbutton.addEventListener("click", (e) => {
 	setIndicator(1);
 	populateItems(mains);
 });
-// dessertsbutton.addEventListener("click", (e) => {
-// 	setIndicator(2);
-// 	populateItems(desserts);
-// });
-// drinksbutton.addEventListener("click", (e) => {
-// 	setIndicator(3);
-// 	populateItems(drinks);
-// });
+dessertsbutton.addEventListener("click", (e) => {
+	setIndicator(2);
+	populateItems(desserts);
+});
+drinksbutton.addEventListener("click", (e) => {
+	setIndicator(3);
+	populateItems(drinks);
+});
 
 function populateItems(items) {
 	let menu = document.querySelector(".menu");
@@ -152,9 +152,7 @@ function setIndicator(sel) {
 	} else {
 		vp = "85%";
 	}
-	let elems = [ni1, ni2
-		// , ni3, ni4
-	];
+	let elems = [ni1, ni2, ni3, ni4];
 	for (i = 0; i < elems.length; i++) {
 		if (i === sel) {
 			elems[i].style.width = vp;
