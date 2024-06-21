@@ -58,9 +58,11 @@ body {
 }
 
 #i1,
-#i2,
+#i2
+/* ,
 #i3,
-#i4 {
+#i4 */
+ {
 	grid-column-start: 1;
 	grid-column-end: 1;
 	display: flex;
@@ -71,14 +73,14 @@ body {
 	grid-column-start: 2;
 	grid-column-end: 2;
 }
-#i3 {
+/* #i3 {
 	grid-column-start: 3;
 	grid-column-end: 3;
 }
 #i4 {
 	grid-column-start: 4;
 	grid-column-end: 4;
-}
+} */
 
 .navi-indicator {
 	height: 4px;
@@ -93,12 +95,12 @@ body {
 #ni2{
 	background: var(--icolor2);
 }
-#ni3{
+/* #ni3{
 	background: var(--icolor3);
 }
 #ni4{
 	background: var(--icolor4);
-}
+} */
 
 .navi {
 	grid-column-start: 2;
@@ -111,9 +113,11 @@ body {
 }
 
 .navi-item1,
-.navi-item2,
+.navi-item2
+/* ,
 .navi-item3,
-.navi-item4 {
+.navi-item4 */
+ {
 	grid-column-start: 1;
 	grid-column-end: 2;
 	display: flex;
@@ -124,14 +128,14 @@ body {
 	grid-column-start: 2;
 	grid-column-end: 2;
 }
-.navi-item3 {
+/* .navi-item3 {
 	grid-column-start: 3;
 	grid-column-end: 3;
 }
 .navi-item4 {
 	grid-column-start: 4;
 	grid-column-end: 4;
-}
+} */
 
 .nav-button {
 	height: 70px;
@@ -150,12 +154,12 @@ body {
 #mainsbutton .navi-icon {
 	color: var(--icolor2);
 }
-#dessertsbutton .navi-icon {
+/* #dessertsbutton .navi-icon {
 	color: var(--icolor3);
 }
 #drinksbutton .navi-icon {
 	color: var(--icolor4);
-}
+} */
 
 .navi-icon {
 	height: 40px;
@@ -287,9 +291,11 @@ body {
 		grid-row-end: 3;
 	}
 	.navi-item1,
-	.navi-item2,
+	.navi-item2
+	/* ,
 	.navi-item3,
-	.navi-item4 {
+	.navi-item4 */
+	 {
 		display: flex;
 	}
 	.nav-button {
