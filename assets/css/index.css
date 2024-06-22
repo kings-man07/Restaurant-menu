@@ -14,7 +14,8 @@ Restaurant Menu
 
 body {
 	font-family: "Rubik", sans-serif;
-	color: #111;
+    color: #111;
+    
 }
 
 .container {
@@ -29,6 +30,9 @@ body {
 	background: var(--bg);
 	/* mobile viewport bug fix */
 	height: -webkit-fill-available;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header {
@@ -138,7 +142,7 @@ body {
 	width: 70px;
 	border-radius: 20px;
 	background: linear-gradient(145deg, #e6e4da, #ffffff);
-	box-shadow: 6px 6px 10px #cfcdc4, -6px -6px 10px #ffffff;
+	/* box-shadow: 6px 6px 10px #cfcdc4, -6px -6px 10px #ffffff; */
 	font-family: "Rubik", sans-serif;
 	font-weight: 700;
 	cursor: pointer;
@@ -193,7 +197,7 @@ body {
 	padding-left: 30px;
 	padding-top: 10px;
 	background: linear-gradient(145deg, #ffffff, #e6e4da);
-	box-shadow: 6px 6px 10px #c7c5bd, -6px -6px 10px #ffffff;
+	/* box-shadow: 6px 6px 10px #c7c5bd, -6px -6px 10px #ffffff; */
 }
 .menu-item-name {
 	grid-column-start: 1;
@@ -232,7 +236,7 @@ body {
 	padding-left: 30px;
 	padding-top: 10px;
 	background: linear-gradient(145deg, #ffffff, #e6e4da);
-	box-shadow: 6px 6px 10px #c7c5bd, -6px -6px 10px #ffffff;
+	/* box-shadow: 6px 6px 10px #c7c5bd, -6px -6px 10px #ffffff; */
 }
 .drink-item-name {
 	grid-column-start: 1;
@@ -265,7 +269,7 @@ body {
 	border-radius: var(--radius);
 	padding-left: 30px;
 	background: linear-gradient(145deg, #ffffff, #e6e4da);
-	box-shadow: 6px 6px 10px #c7c5bd, -6px -6px 10px #ffffff;
+	/* box-shadow: 6px 6px 10px #c7c5bd, -6px -6px 10px #ffffff; */
 }
 
 /*Desktop Stuff*/
@@ -356,4 +360,33 @@ a,
 a:link,
 a:visited {
 	color: var(--maincolor);
+}
+.veg-icon, .non-veg-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 3px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.veg-icon::after, .non-veg-icon::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.veg-icon::after {
+    background-color: green;
+}
+
+.non-veg-icon::after {
+    background-color: red;
 }

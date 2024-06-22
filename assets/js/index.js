@@ -4,8 +4,8 @@
 const starters = JSON.parse(
 	"[" +
 		'{ "type":"separator", "description":"APPETIZERS" },' +
-		'{ "type":"food", "name":"CROSTINI", "description":"with diced tomatoes, onions, garlic and basil", "price":"12.00" },' +
-		'{ "type":"food", "name":"NACHOS", "description":"with 2 dips of your choice, gratinated with cheese and sliced chicken", "price":"10.50" },' +
+		'{ "type":"food", "name":"CROSTINI", "description":"with diced tomatoes, onions, garlic and basil", "price":"12.00", "food":"veg" },' +
+		'{ "type":"food", "name":"NACHOS", "description":"with 2 dips of your choice, gratinated with cheese and sliced chicken", "price":"10.50","food":"nonveg"  },' +
 		'{ "type":"separator", "description":"SALADS" },' +
 		'{ "type":"food", "name":"CHICKEN CHILI SALAD", "description":"mixed salad, fried sliced chicken marinated with honey and chili", "price":"25.00" },' +
 		'{ "type":"food", "name":"FENNEL-APPLE SALAD", "description":"with rocket, feta, cranberries and pumpkin seeds", "price":"15.00" },' +
@@ -114,9 +114,21 @@ function populateItems(items) {
 			menuitemdesc.setAttribute("class", "menu-item-description");
 			menuitemprize.setAttribute("class", "menu-item-price");
 
-			menuitemname.innerHTML = items[i].name;
-			menuitemdesc.innerHTML = items[i].description;
-			menuitemprize.innerHTML = items[i].price;
+			 // Create veg/non-veg icon
+			 let icon = document.createElement("span");
+			 if (items[i].food === "veg") {
+				 icon.setAttribute("class", "veg-icon");
+			 } else if (items[i].food === "nonveg") {
+				 icon.setAttribute("class", "non-veg-icon");
+			 }
+ 
+			 menuitemname.appendChild(icon);
+
+			 menuitemname.appendChild(document.createTextNode(items[i].name));
+ 
+			 menuitemdesc.innerHTML = items[i].description;
+ 
+			 menuitemprize.innerHTML = items[i].price;
 
 			menuitem.appendChild(menuitemname);
 			menuitem.appendChild(menuitemdesc);
@@ -168,6 +180,38 @@ window.addEventListener("resize", (e) => {
 	setIndicator(sl);
 });
 
+function changeBackgroundImage(imageUrl) {
+    let menu = document.querySelector(".container");
+    menu.style.backgroundImage = `url(${imageUrl})`;
+}
+
+window.addEventListener("resize", (e) => {
+    setIndicator(sl);
+});
+
+// Add event listeners to buttons
+document.getElementById("startersbutton").addEventListener("click", function() {
+    populateItems(starters);
+    changeBackgroundImage('assets/image/drinksImage.png'); // Replace with your image path
+});
+
+document.getElementById("mainsbutton").addEventListener("click", function() {
+    populateItems(mains);
+    changeBackgroundImage('assets/image/foodmenu.png'); // Replace with your image path
+});
+
+document.getElementById("dessertsbutton").addEventListener("click", function() {
+    populateItems(desserts);
+    changeBackgroundImage('assets/image/drinksImage.png'); // Replace with your image path
+});
+
+document.getElementById("drinksbutton").addEventListener("click", function() {
+    populateItems(drinks);
+    changeBackgroundImage('assets/image/drinksImage.png'); // Replace with your image path
+});
+
+
 //default runs
 setIndicator(sl);
 populateItems(starters);
+changeBackgroundImage('assets/image/drinksImage.png'); // Replace with your image path
