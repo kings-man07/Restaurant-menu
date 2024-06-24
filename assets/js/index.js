@@ -10,7 +10,35 @@ const starters = JSON.parse(
 		'{ "type":"food", "name":"Oriental Salad", "description":"Salads Made From Boiled Salads Full Of Cabbage, Carrots, Noodles, Green Onions, Tossed With OrientalÊDressing", "price":"149","food":"veg"  },' +
 		'{ "type":"food", "name":"Paneer Tikka Chat", "description":"Spicy, Tangy,Chat Made With Paneer Tikka, Onion And Bell Pepper", "price":"199", "food":"veg" },' +
 		'{ "type":"food", "name":"Cucumber Salad", "description":"Chopped Onions, Tomatoes, Cucumbers and A Salt, Pepper, Chilli, Lemon Dressing", "price":"149","food":"veg"  },' +
-		'{ "type":"food", "name":"Chicken Tikka Chat", "description":"Spicy, Tangy,Chat Tossed With Chicken Tikka, Onion, BellPepperAndIndianSpices", "price":"199", "food":"nonveg" } ]'
+		'{ "type":"food", "name":"Chicken Tikka Chat", "description":"Spicy, Tangy,Chat Tossed With Chicken Tikka, Onion, BellPepperAndIndianSpices", "price":"199", "food":"nonveg" },' +
+		'{ "type":"separator", "description":"STREET FOOD" },' +
+		'{ "type":"food", "name":"Masala Peanuts", "description":"", "price":"149", "food":"veg" },' +
+		'{ "type":"food", "name":"Fried Masala Kajunuts", "description":"", "price":"229","food":"veg"  },' +
+		'{ "type":"food", "name":"Aloo & Chana Chat ", "description":"", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Hatpata Masala Papad", "description":"", "price":"149","food":"veg"  },' +
+		'{ "type":"food", "name":"Roasted Papad", "description":"", "price":"99", "food":"veg" },' +
+		'{ "type":"food", "name":"Plain Curd", "description":"", "price":"99","food":"veg"  },' +
+		'{ "type":"food", "name":"Choice Of Raita", "description":"Plain / Mixed Vegetable / Pineapple", "price":"149", "food":"veg" },' +
+
+		'{ "type":"separator", "description":"SOUPS / ZUPPA " },' +
+
+		'{ "type":"food", "name":"Roasted Creamy Tomato Soup", "description":"Juicy Roma tomatoes oven roasted, pureed and thickened with flour, butter and cream", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Cream Of Chicken & Thyme Soup", "description":"A velvety broth rich in chicken & cream, flavoured with aromatic thyme", "price":"299", "food":"nonveg" },' +
+		'{ "type":"food", "name":"Caramelized Onion Soup With Chicken", "description":"Flavorful sweet & savory French soup served with cheese & croutons", "price":"299" , "food":"nonveg"},' +
+		'{ "type":"food", "name":"Caramelized Onion Soup With Veggies", "description":"Flavorful sweet & savory French soup served with cheese & croutons", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Cream De La Cream Veggies", "description":"Mélange of veggies creamed with butter & flour, flavored with French spices", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Sweet Corn Soup [Chicken]", "description":"Flavored corn kernels Soup; made with oriental spices, chicken flavorful broth & potato butter starch", "price":"299" , "food":"nonveg"},' +
+		'{ "type":"food", "name":"Sweet Corn Soup [Veggies]", "description":"Flavored corn kernels Soup; made with oriental spices, vegetable flavorful broth & potato butter starch", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Manchow Soup [Chicken]", "description":"A popular Indo Chinese soup made with chicken, ground pepper, and pantry spices served with crispy fried noodles", "price":"299", "food":"nonveg" },' +
+		'{ "type":"food", "name":"Manchow Soup [Veg]", "description":"A popular Indo Chinese soup made with vegetables, ground pepper, and pantry spices served with crispy fried noodles", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Lemon Coriander Soup [Chicken]", "description":"A refreshing soup made with mélange of veggies, chicken, lemon juice & coriander paste of South Asian origin", "price":"299", "food":"nonveg" },' +
+		'{ "type":"food", "name":"Lemon Coriander Soup [Veg]", "description":"A refreshing soup made with mélange of veggies, lemon juice & coriander paste of South Asian origin", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Hot & Sour Soup [Chicken]", "description":"A specialty of The Grand made with sweet chili pepper, fresh lemon juice, and chicken", "price":"299" , "food":"nonveg"},' +
+		'{ "type":"food", "name":"Hot & Sour Soup [Veg]", "description":"A specialty of The Grand made with sweet chili pepper, fresh lemon juice, and vegetables", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Jade Soup [Chicken]", "description":"A green soup of Ming dynasty era made with Chinese spices, chicken, mushroom & corn, flavored with oriental spices", "price":"299", "food":"nonveg" },' +
+		'{ "type":"food", "name":"Jade Soup [Veg]", "description":"A green soup of Ming dynasty era made with Chinese spices, mushroom & corn, flavored with oriental spices", "price":"199" ,"food":"veg"}' +
+
+	']'
 );
 const mains = JSON.parse(
 	"[" +
@@ -28,7 +56,7 @@ const mains = JSON.parse(
 		'{ "type":"food", "name":"RAVIOLI", "description":"filled with truffle-ricotta and hazelnuts butter", "price":"28.50" } ]'
 );
 const desserts = JSON.parse(
-	"[" +
+	"[" + 
 		'{ "type":"separator", "description":"SWEETS" },' +
 		'{ "type":"food", "name":"CHOCOLATE MOUSSE", "description":"with star anise, a pecan brownie and salty caramel sauce", "price":"12.00" },' +
 		'{ "type":"food", "name":"TIRAMISU", "description":"rolled rhubarb pistachio with vanilla strawberry amaretto sauce", "price":"13.50" },' +

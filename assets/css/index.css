@@ -185,44 +185,49 @@ body {
 }
 
 .menu-item {
-	grid-column-start: 2;
-	grid-column-end: 2;
-	height: 110px;
-	margin: 15px;
-	display: grid;
-	grid-template-columns: auto 90px;
-	grid-template-rows: 40px 60px;
-	font-size: 0.9em;
-	border-radius: var(--radius);
-	padding-left: 30px;
-	padding-top: 10px;
-	background: linear-gradient(145deg, #ffffff, #e6e4da);
-	/* box-shadow: 6px 6px 10px #c7c5bd, -6px -6px 10px #ffffff; */
-}
-.menu-item-name {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 2;
-	font-weight: 700;
-	line-height: 50px;
-}
-.menu-item-description {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 2;
-	grid-row-end: 2;
-}
-.menu-item-price {
-	grid-column-start: 2;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 3;
-	font-weight: 700;
-	line-height: 100px;
-	text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: auto 90px;
+    grid-template-rows: auto auto;
+    font-size: 0.9em;
+    border-radius: var(--radius);
+    padding-left: 30px;
+	padding-bottom: 10px;
+    padding-top: 10px;
+    background: linear-gradient(145deg, #ffffff, #e6e4da);
+    align-items: center; /* Ensures items are centered vertically */
 }
 
+.menu-item-name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-weight: 700;
+    line-height: 1.2em; /* Adjust line height to fit multiple lines neatly */
+    word-wrap: break-word; /* Allows breaking words onto the next line */
+    white-space: normal; /* Allows text to wrap to the next line */
+    overflow-wrap: break-word; /* Breaks long words at appropriate points */
+}
+
+.menu-item-description {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    line-height: 1.2em;
+}
+
+.menu-item-price {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-weight: 700;
+    text-align: center;
+}
 .drink-item {
 	grid-column-start: 2;
 	grid-column-end: 2;
