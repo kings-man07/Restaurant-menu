@@ -4,18 +4,19 @@
 const starters = JSON.parse(
 	"[" +
 		'{ "type":"separator", "description":"SALADS" },' +
-		'{ "type":"food", "name":"Garden Fresh Green Salad", "description":"Green Veggies Cut and Served Fresh", "price":"149", "food":"veg" },' +
+		'{ "type":"food", "name":"Garden Fresh Green Salad", "description":"Green Veggies Cut and Served Fresh", "price":"149", "food":"veg"},' +
 		'{ "type":"food", "name":"Russian Salad", "description":"Salads Made From Boiled Vegetables, Pineapple And Eggless Mayonnaise", "price":"149","food":"veg"  },' +
 		'{ "type":"food", "name":"Pasta Salad With Sundried Tomatoes", "description":"Macaroni Pasta, Fresh Mozzarella, Basil, and Sun-Dried Tomatoes", "price":"149", "food":"veg" },' +
 		'{ "type":"food", "name":"Oriental Salad", "description":"Salads Made From Boiled Salads Full Of Cabbage, Carrots, Noodles, Green Onions, Tossed With OrientalÊDressing", "price":"149","food":"veg"  },' +
-		'{ "type":"food", "name":"Paneer Tikka Chat", "description":"Spicy, Tangy,Chat Made With Paneer Tikka, Onion And Bell Pepper", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Paneer Tikka Chat", "description":"Spicy, Tangy,Chat Made With Paneer Tikka, Onion And Bell Pepper", "price":"199", "food":"veg" , "spicy":"mild"},' +
 		'{ "type":"food", "name":"Cucumber Salad", "description":"Chopped Onions, Tomatoes, Cucumbers and A Salt, Pepper, Chilli, Lemon Dressing", "price":"149","food":"veg"  },' +
-		'{ "type":"food", "name":"Chicken Tikka Chat", "description":"Spicy, Tangy,Chat Tossed With Chicken Tikka, Onion, BellPepperAndIndianSpices", "price":"199", "food":"nonveg" },' +
+		'{ "type":"food", "name":"Chicken Tikka Chat", "description":"Spicy, Tangy,Chat Tossed With Chicken Tikka, Onion, BellPepperAndIndianSpices", "price":"199", "food":"nonveg" , "spicy":"mild"},' +
+		
 		'{ "type":"separator", "description":"STREET FOOD" },' +
-		'{ "type":"food", "name":"Masala Peanuts", "description":"", "price":"149", "food":"veg" },' +
+		'{ "type":"food", "name":"Masala Peanuts", "description":"", "price":"149", "food":"veg", "spicy":"mild" },' +
 		'{ "type":"food", "name":"Fried Masala Kajunuts", "description":"", "price":"229","food":"veg"  },' +
 		'{ "type":"food", "name":"Aloo & Chana Chat ", "description":"", "price":"199", "food":"veg" },' +
-		'{ "type":"food", "name":"Hatpata Masala Papad", "description":"", "price":"149","food":"veg"  },' +
+		'{ "type":"food", "name":"Hatpata Masala Papad", "description":"", "price":"149","food":"veg", "spicy":"hot"  },' +
 		'{ "type":"food", "name":"Roasted Papad", "description":"", "price":"99", "food":"veg" },' +
 		'{ "type":"food", "name":"Plain Curd", "description":"", "price":"99","food":"veg"  },' +
 		'{ "type":"food", "name":"Choice Of Raita", "description":"Plain / Mixed Vegetable / Pineapple", "price":"149", "food":"veg" },' +
@@ -27,25 +28,94 @@ const starters = JSON.parse(
 		'{ "type":"food", "name":"Caramelized Onion Soup With Chicken", "description":"Flavorful sweet & savory French soup served with cheese & croutons", "price":"299" , "food":"nonveg"},' +
 		'{ "type":"food", "name":"Caramelized Onion Soup With Veggies", "description":"Flavorful sweet & savory French soup served with cheese & croutons", "price":"199", "food":"veg" },' +
 		'{ "type":"food", "name":"Cream De La Cream Veggies", "description":"Mélange of veggies creamed with butter & flour, flavored with French spices", "price":"199", "food":"veg" },' +
-		'{ "type":"food", "name":"Sweet Corn Soup [Chicken]", "description":"Flavored corn kernels Soup; made with oriental spices, chicken flavorful broth & potato butter starch", "price":"299" , "food":"nonveg"},' +
+		'{ "type":"food", "name":"Sweet Corn Soup [Chicken]", "spicy":"mild", "description":"Flavored corn kernels Soup; made with oriental spices, chicken flavorful broth & potato butter starch", "price":"299" , "food":"nonveg"},' +
 		'{ "type":"food", "name":"Sweet Corn Soup [Veggies]", "description":"Flavored corn kernels Soup; made with oriental spices, vegetable flavorful broth & potato butter starch", "price":"199", "food":"veg" },' +
-		'{ "type":"food", "name":"Manchow Soup [Chicken]", "description":"A popular Indo Chinese soup made with chicken, ground pepper, and pantry spices served with crispy fried noodles", "price":"299", "food":"nonveg" },' +
-		'{ "type":"food", "name":"Manchow Soup [Veg]", "description":"A popular Indo Chinese soup made with vegetables, ground pepper, and pantry spices served with crispy fried noodles", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Manchow Soup [Chicken]", "spicy":"mild", "description":"A popular Indo Chinese soup made with chicken, ground pepper, and pantry spices served with crispy fried noodles", "price":"299", "food":"nonveg" },' +
+		'{ "type":"food", "name":"Manchow Soup [Veg]", "spicy":"mild", "description":"A popular Indo Chinese soup made with vegetables, ground pepper, and pantry spices served with crispy fried noodles", "price":"199", "food":"veg" },' +
 		'{ "type":"food", "name":"Lemon Coriander Soup [Chicken]", "description":"A refreshing soup made with mélange of veggies, chicken, lemon juice & coriander paste of South Asian origin", "price":"299", "food":"nonveg" },' +
 		'{ "type":"food", "name":"Lemon Coriander Soup [Veg]", "description":"A refreshing soup made with mélange of veggies, lemon juice & coriander paste of South Asian origin", "price":"199", "food":"veg" },' +
-		'{ "type":"food", "name":"Hot & Sour Soup [Chicken]", "description":"A specialty of The Grand made with sweet chili pepper, fresh lemon juice, and chicken", "price":"299" , "food":"nonveg"},' +
-		'{ "type":"food", "name":"Hot & Sour Soup [Veg]", "description":"A specialty of The Grand made with sweet chili pepper, fresh lemon juice, and vegetables", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Hot & Sour Soup [Chicken]", "spicy":"hot", "description":"A specialty of The Grand made with sweet chili pepper, fresh lemon juice, and chicken", "price":"299" , "food":"nonveg"},' +
+		'{ "type":"food", "name":"Hot & Sour Soup [Veg]", "spicy":"hot", "description":"A specialty of The Grand made with sweet chili pepper, fresh lemon juice, and vegetables", "price":"199", "food":"veg" },' +
 		'{ "type":"food", "name":"Jade Soup [Chicken]", "description":"A green soup of Ming dynasty era made with Chinese spices, chicken, mushroom & corn, flavored with oriental spices", "price":"299", "food":"nonveg" },' +
-		'{ "type":"food", "name":"Jade Soup [Veg]", "description":"A green soup of Ming dynasty era made with Chinese spices, mushroom & corn, flavored with oriental spices", "price":"199" ,"food":"veg"}' +
+		'{ "type":"food", "name":"Jade Soup [Veg]", "description":"A green soup of Ming dynasty era made with Chinese spices, mushroom & corn, flavored with oriental spices", "price":"199" ,"food":"veg"},' +
 
+		'{ "type":"separator", "description":"APPETISER VEGETERIAN CLAY POT " },' +
+
+		'{ "type":"food", "name":"Traditional Paneer Tikka", "description":"A North Indian delight featuring marinated paneer cheese and veggies grilled in a tandoor. Seasoned with lemon juice and chat masala, it’s a flavorful vegetarian treat", "price":"329","food":"veg","spicy":"mild" },' +
+		'{ "type":"food", "name":"Haryali Paneer Tikka", "description":"A delightful Indian appetizer featuring cubes of soft paneer, marinated in green Indian herbs paste with crisp bell peppers and onions", "price":"329","food":"veg" },' +
+		'{ "type":"food", "name":"Yellow Chilli Paneer Tikka", "description":"Delightful Indian appetizer known for its smoky flavor and aromatic spices. It combines paneer with vibrant veggies, marinated and char grilled in tandoor", "price":"329" ,"food":"veg", "spicy":"hot"},' +
+		'{ "type":"food", "name":"Cheese & Malai Paneer Tikka", "description":"A creamy and mild Indian starter made with soft paneer cubes, marinated in hung curd, cream, spices, and herbs. Grilled to perfection and served with lemon", "price":"349","food":"veg" },' +
+		'{ "type":"food", "name":"Pesto Paneer Tikka", "description":"Soft paneer cubes marinated in a thick yogurt-based marinade with basil pesto, grilled to perfection. Served with mint chutney", "price":"329","food":"veg" },' +
+		'{ "type":"food", "name":"HARA BHARA TIKKA", "description":"A healthy and flavorful Indian appetizer made with spinach, potatoes, peas, and spices. Super addictive!", "price":"249" ,"food":"veg"},' +
+		'{ "type":"food", "name":"Makai Mirchi Tikka", "description":"A delightful snack made with corn, green chili, and spices. Shallow-fried to perfection!", "price":"249","food":"veg", "spicy":"mild"},' +
+		'{ "type":"food", "name":"Rajma Galouti Kabab", "description":"Rajma Galouti Kebab is a melt-in-the-mouth vegetarian version of the traditional Galouti kebab. Packed with flavor, perfect as snacks", "price":"249" ,"food":"veg" },' +
+		'{ "type":"food", "name":"Karare Sabzi Seekh Kabab", "description":"A tandoor-grilled appetizer made with mixed vegetables, gram flour, and aromatic spices. Served with mint chutney", "price":"299" ,"food":"veg"},' +
+		'{ "type":"food", "name":"Bharbani Aloo", "description":"A flavorful Indian appetizer where barrel-shaped potatoes are filled with spiced cottage cheese, marinated in yogurt masala, and cooked in the tandoor", "price":"299","food":"veg" },' +
+		'{ "type":"food", "name":"Tandoori Sabzi Sa shlik", "description":"A fusion dish featuring sweet pineapple and piquant capsicum, grilled to perfection. A delightful appetizer!", "price":"329" ,"food":"veg"},' +
+		'{ "type":"food", "name":"Tandoori Pineapple Bhut Jolokia", "description":"Sweet pineapple grilled with the worlds spiciest Bhut Jolokia pepper. A fiery fusion of flavors!", "price":"329" ,"food":"veg", "spicy":"hot"},'+
+
+		'{ "type":"separator", "description":"NON VEG CLAY POT " },' +
+		'{ "type":"food", "food":"nonveg", "name":"Ajwaini Tikka Machhi", "description":"Tender, boneless fish pieces marinated with spicy ajwain flavor, grilled to perfection. Served hot with green chutney", "price":"399", "spicy":"mild" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Machhi Mulayami Cheese Tikka", "description":"Boneless fish cubes marinated with garlic, ginger, cheese, green chilies, and spices, grilled to perfection", "price":"399" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Traditional Machhi Lal Mirchi Tikka", "description":"Fish marinated in hung curd, spices, and red chilies, tandoor roasted. Garnished with coriander and lemon wedges", "price":"399", "spicy":"hot" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Yellow Chilli Tangdi Kabab", "description":"Chicken drumsticks marinated in spices, yellow chili powder, curd, and cream. Grilled to perfection, mildly spiced and flavorful", "price":"399", "spicy":"hot" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Tandoori Murgh Full", "description":"Tandoori chicken made from chicken marinated in yogurt and spices, then roasted in a cylindrical clay oven", "price":"599" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Tandoori Murgh Half", "description":"Tandoori chicken made from chicken marinated in yogurt and spices, then roasted in a cylindrical clay oven", "price":"429" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Nizami Tandoori Pomfret", "description":"Traditional Indian dish prepared with Pomfret, marinated in lemon juice, ginger-garlic paste, salt, red chili paste, garam masala, yogurt, and turmeric. Cooked in a tandoor oven and served with green chutneys, lemon wedges, and onion slices", "price":"529" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Angaar Ka Jhinga", "description":"Tandoori prawns succulent shrimp marinated in yogurt and aromatic spices, grilled to perfection", "price":"529" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Mutton Seekh Kabab", "description":"Ground or minced mutton flavored with aromatic spices, skewered, and pan-roasted until melt-in-the-mouth perfection", "price":"529" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Traditional Chicken Tikka", "description":"Small boneless chicken pieces marinated in yogurt and spices, then grilled to perfection", "price":"399", "spicy":"mild" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Haryali Chicken Tikka", "description":"Classic North Indian starter where chicken is flavored with fresh green herbs—mint and coriander leaves—along with spices, resulting in a delicious appetizer", "price":"399" },' +
+		'{ "type":"food", "food":"nonveg", "name":"Murgh Malai & Cheese Tikka", "description":"Tender chicken kebab marinated in a creamy mixture of yogurt, cheese, and spices, then grilled to perfection", "price":"399" },'+
+
+		'{ "type":"separator", "description":"ORIENTAL VEG " },' +
+		'{ "type":"food","food":"veg", "name":"Salt & Pepper Veggies", "description":"Indo-Chinese dish made with assorted veggies coated in a creamy batter and fried crisp", "price":"269", "spicy":"mild" },' +
+		'{ "type":"food","food":"veg", "name":"Salt & Pepper American Corn Nibbles", "description":"Marinated boiled corn niblets in corn starch, fried until crisp, tossed with garlic, ginger, green chili, onions, and colorful capsicums", "price":"269", "spicy":"mild" },' +
+		'{ "type":"food","food":"veg", "name":"Salt & Pepper Mushroom", "description":"Mushrooms fried to crispy perfection, seasoned with simple ingredients, and just the right amount of heat", "price":"299", "spicy":"mild" },' +
+		'{ "type":"food","food":"veg", "name":"Veggie Dumplings Manchurian", "description":"Delicious dish made with wisps of vegetables formed into dumplings and dunked into a sauce with a gorgeous interplay of hot, sweet, sour, and salty flavors", "price":"269" },' +
+		'{ "type":"food","food":"veg", "name":"Crispy Potatoes In Chilly Sesame Sauce", "description":"Popular Indo-Chinese starter made with crisp-fried potatoes, tossed in a slightly spicy, sweet, and sour chili sauce", "price":"269", "spicy":"mild" },' +
+		'{ "type":"food","food":"veg", "name":"Chilli Sauce Coated Crunchy Baby Corn", "description":"Popular Indo-Chinese starter made by deep-frying baby corn until golden brown and tossing it in a spicy and tangy onion-capsicum stir-fry sauce", "price":"269", "spicy":"hot" },' +
+		'{ "type":"food","food":"veg", "name":"Cottage Cheese In Choice Of Sauce", "description":"Choice of sauces: CHILLI/HOT GARLIC/SCHEZWAN/MANCHURIAN", "price":"349", "spicy":"mild" },' +
+		'{ "type":"food","food":"veg", "name":"Veggies Crunchy Lollipops", "description":"Crispy fried lollipops made with a mix of vegetables like potatoes, cabbage, carrots, capsicum, and onions. Seasoned with Indian spices and served as a delightful vegetarian snack", "price":"269", "spicy":"mild" },' +
+		'{ "type":"food","food":"veg", "name":"Potato 65", "description":"Crispy and spicy potato snack where parboiled, cubed potatoes are doused in a spicy batter and fried until golden. Tossed with green chili and curry leaves", "price":"269", "spicy":"hot" },' +
+		'{ "type":"food","food":"veg", "name":"Paneer 65", "description":"Crispy and spicy cottage cheese snack where cubed paneer is doused in a spicy batter and fried until golden. Tossed with green chili and curry leaves", "price":"349", "spicy":"hot" },' +
+		'{ "type":"food","food":"veg", "name":"Cheese & Corn Spring Roll With Sweet Chilly Dip", "description":"Delicious spring roll crispy on the outside, with a spiced veggie and cheesy filling inside", "price":"349" },' +
+		'{ "type":"food","food":"veg", "name":"Oriental Spring Roll With Thai Veggies Served With Hot Garlic Sauce", "description":"Oriental spring rolls with a variety of vegetables wrapped in thin pastry and deep-fried", "price":"349" },'+
+
+		'{ "type":"separator", "description":"ORIENTAL NON VEG" },' +
+		'{ "type":"food","food":"nonveg", "name":"Korean Crispy Chicken Wings", "description":"Korean Chicken Wings hit all flavor notes: sweet, spicy, tangy, and savory. Coated in a gochujang-based sauce", "price":"399" },' +
+		'{ "type":"food","food":"nonveg", "name":"Dragon Chicken Wings", "description":"Fiery and intensely flavorful chicken wings. Marinated in a spicy blend, deep-fried, and tossed with hot sauce", "price":"399", "spicy":"mild" },' +
+		'{ "type":"food","food":"nonveg", "name":"Onaki Red Chilli Chicken Dry", "description":"Indo-Chinese dish made with marinated chicken, soy sauce, and slow-cooked onions. Flavorful and moderately spicy", "price":"399", "spicy":"hot" },' +
+		'{ "type":"food","food":"nonveg", "name":"Kung Pao Chicken", "description":"Spicy stir-fried Chinese dish made with cubes of chicken, peanuts, vegetables, and chili peppers", "price":"399" },' +
+		'{ "type":"food","food":"nonveg", "name":"Dragon Chicken", "description":"Spicy, addictive Indo-Chinese appetizer made with crispy fried chicken strips, sautéed onions, capsicum, and cashews, all coated in a flavorful red chili sauce", "price":"399", "spicy":"mild" },' +
+		'{ "type":"food","food":"nonveg", "name":"Crispy Calamari", "description":"Crispy fried calamari, a Greek meze made by lightly coating thick calamari slices in seasoned flour and frying until golden brown", "price":"429" },' +
+		'{ "type":"food","food":"nonveg", "name":"Chicken Drum Stick", "description":"Oriental Chicken Drumsticks full of flavor. Marinated with soy sauce, rice vinegar, and ginger, then baked. Topped with sesame seeds and green onions for garnish", "price":"399" },' +
+		'{ "type":"food","food":"nonveg", "name":"Chicken Lollipop", "description":"Indo-Chinese appetizers made from chicken drumettes. They are marinated, batter-fried, and served with a sweet and spicy sauce", "price":"399" },' +
+		'{ "type":"food","food":"nonveg", "name":"Chicken65", "description":"Spicy, deep-fried chicken dish originating from Hotel Buhari, Chennai, India. Prepared using boneless chicken and served with an onion and lemon garnish", "price":"399", "spicy":"hot" },' +
+		'{ "type":"food","food":"nonveg", "name":"Apollo Fish", "description":"Boneless fish marinated with spices and curry leaves. Spicy, hot, and super flavorful when fried, making it a delightful Indian meal", "price":"399" },' +
+		'{ "type":"food","food":"nonveg", "name":"Chicken In Choice Of Sauce", "description":"Choice of sauces: CHILLI / HOT GARLIC / SCHEZWAN / MANCHOMIN", "price":"399", "spicy":"hot" },' +
+		'{ "type":"food","food":"nonveg", "name":"Fish In Choice Of Sauce", "description":"Choice of sauces: CHILLI / HOT GARLIC / SCHEZWAN / MANCHOMIN", "price":"399", "spicy":"hot" },' +
+		'{ "type":"food","food":"nonveg", "name":"Prawn In Choice Of Sauce", "description":"Choice of sauces: CHILLI / HOT GARLIC / SCHEZWAN / MANCHOMIN", "price":"429", "spicy":"hot" },' +
+		'{ "type":"food","food":"nonveg", "name":"Smoked Sliced Lamb Dry In Choice Of Sauce", "description":"Choice of sauces: CHILLI / HOT GARLIC / SCHEZWAN / MANCHOMIN", "price":"499", "spicy":"hot" },'+
+
+'{ "type":"separator", "description":"SOUTH INDIAN" },' +
+'{ "type":"food","food":"veg", "name":"Podi Idli", "description":"Podi Idli, a quick South Indian breakfast featuring steamed idlis coated in spicy ground lentil condiment (Pod)", "price":"229" },' +
+'{ "type":"food","food":"veg", "name":"Chilli Idli", "description":"Fusion dish of fried idly tossed with oriental spices and soya chilli sauce", "price":"229", "spicy":"mild" },' +
+'{ "type":"food","food":"nonveg", "name":"Mriyalai Mamsun Vepudu", "description":"", "price":"529", "spicy":"hot" },' +
+'{ "type":"food","food":"nonveg", "name":"Rawa Fry Fish With Southern Spices", "description":"Mangalorean specialty featuring fish fillets coated in homemade masala and fine semolina (rava)", "price":"399" },' +
+'{ "type":"food","food":"veg", "name":"Aloo Gada Vepudu", "description":"", "price":"229" },' +
+'{ "type":"food","food":"nonveg", "name":"Green Chilli Kodi Andhra Style", "description":"Spicy Andhra-style dry chicken dish flavored mainly with green chilies", "price":"399", "spicy":"hot" },' +
+'{ "type":"food","food":"nonveg", "name":"Tawa Fried Rava Pomfret", "description":"Tawa crispy pomfret fry, tender inside and crispy outside, marinated with spices and pan-fried to perfection", "price":"599" },' +
+'{ "type":"food","food":"veg", "name":"Peregu Annam [Curd Rice]", "description":"South Indian favorite combining soft cooked rice with curd (yogurt), salts, and a flavorful tempering of spices and curry leaves", "price":"299" },' +
+'{ "type":"food","food":"veg", "name":"Nolu Pulu With Alam Chutney", "description":"Snack item made with split black grams, split Bengal grams, red chilies, tamarind, and aromatic spices, served with fiery ginger chutney", "price":"249" }'+
 	']'
 );
 const mains = JSON.parse(
 	"[" +
 		'{ "type":"separator", "description":"PIZZA" },' +
-		'{ "type":"food", "name":"MARGHERITA", "description":"Tomato sauce, mozzarella, organic oregano", "price":"18.00" },' +
+		'{ "type":"food", "name":"MARGHERITA", "description":"Tomato sauce, mozzarella, organic oregano", "price":"18.00" , "spicy":"mild"},' +
 		'{ "type":"food", "name":"PROSCIUTTO", "description":"Tomato sauce, mozzarella, ham, organic oregano", "price":"21.50" },' +
-		'{ "type":"food", "name":"SALAME", "description":"Tomato sauce, mozzarella, salami, organic oregano", "price":"21.00" },' +
+		'{ "type":"food", "name":"SALAME", "description":"Tomato sauce, mozzarella, salami, organic oregano", "price":"21.00"},' +
 		'{ "type":"food", "name":"TONNO", "description":"Tomato sauce, mozzarella, tuna MSC, capers, organic oregano", "price":"19.50" },' +
 		'{ "type":"separator", "description":"MEAT & FISH" },' +
 		'{ "type":"food", "name":"SURF & TURF", "description":"Beef entrecôte with herb butter, vegetables and  fries", "price":"48.00" },' +
@@ -138,6 +208,8 @@ function populateItems(items) {
 			let menuitemname = document.createElement("div");
 			let menuitemdesc = document.createElement("div");
 			let menuitemprize = document.createElement("div");
+
+			
 			menuitem.setAttribute("class", "menu-item");
 			menuitemname.setAttribute("class", "menu-item-name");
 			menuitemdesc.setAttribute("class", "menu-item-description");
@@ -154,6 +226,15 @@ function populateItems(items) {
 			 menuitemname.appendChild(icon);
 
 			 menuitemname.appendChild(document.createTextNode(items[i].name));
+
+			 if (items[i].spicy) {
+                let numChilies = items[i].spicy === "hot" ? 2 : items[i].spicy === "mild" ? 1 : 0;
+                for (let j = 0; j < numChilies; j++) {
+                    let chiliIcon = document.createElement("span");
+                    chiliIcon.setAttribute("class", "chili-icon fas fa-pepper-hot");
+                    menuitemname.appendChild(chiliIcon);
+                }
+            }
  
 			 menuitemdesc.innerHTML = items[i].description;
  

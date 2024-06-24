@@ -395,3 +395,12 @@ a:visited {
 .non-veg-icon::after {
     background-color: red;
 }
+
+/* Red Chili Icon */
+.chili-icon {
+	display: inline-block;
+	width: 10px;
+	padding-right: 2px;
+	height: 10px;
+	color: red;
+  }
