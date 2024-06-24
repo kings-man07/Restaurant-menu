@@ -3,13 +3,14 @@
 //////////////////////
 const starters = JSON.parse(
 	"[" +
-		'{ "type":"separator", "description":"APPETIZERS" },' +
-		'{ "type":"food", "name":"CROSTINI", "description":"with diced tomatoes, onions, garlic and basil", "price":"12.00", "food":"veg" },' +
-		'{ "type":"food", "name":"NACHOS", "description":"with 2 dips of your choice, gratinated with cheese and sliced chicken", "price":"10.50","food":"nonveg"  },' +
 		'{ "type":"separator", "description":"SALADS" },' +
-		'{ "type":"food", "name":"CHICKEN CHILI SALAD", "description":"mixed salad, fried sliced chicken marinated with honey and chili", "price":"25.00" },' +
-		'{ "type":"food", "name":"FENNEL-APPLE SALAD", "description":"with rocket, feta, cranberries and pumpkin seeds", "price":"15.00" },' +
-		'{ "type":"food", "name":"CAESAR`S SALAD", "description":"Lettuce with fried baconstrips, croûtons, Grana Padano, egg and Caesar Dressing", "price":"16.00" } ]'
+		'{ "type":"food", "name":"Garden Fresh Green Salad", "description":"Green Veggies Cut and Served Fresh", "price":"149", "food":"veg" },' +
+		'{ "type":"food", "name":"Russian Salad", "description":"Salads Made From Boiled Vegetables, Pineapple And Eggless Mayonnaise", "price":"149","food":"veg"  },' +
+		'{ "type":"food", "name":"Pasta Salad With Sundried Tomatoes", "description":"Macaroni Pasta, Fresh Mozzarella, Basil, and Sun-Dried Tomatoes", "price":"149", "food":"veg" },' +
+		'{ "type":"food", "name":"Oriental Salad", "description":"Salads Made From Boiled Salads Full Of Cabbage, Carrots, Noodles, Green Onions, Tossed With OrientalÊDressing", "price":"149","food":"veg"  },' +
+		'{ "type":"food", "name":"Paneer Tikka Chat", "description":"Spicy, Tangy,Chat Made With Paneer Tikka, Onion And Bell Pepper", "price":"199", "food":"veg" },' +
+		'{ "type":"food", "name":"Cucumber Salad", "description":"Chopped Onions, Tomatoes, Cucumbers and A Salt, Pepper, Chilli, Lemon Dressing", "price":"149","food":"veg"  },' +
+		'{ "type":"food", "name":"Chicken Tikka Chat", "description":"Spicy, Tangy,Chat Tossed With Chicken Tikka, Onion, BellPepperAndIndianSpices", "price":"199", "food":"nonveg" } ]'
 );
 const mains = JSON.parse(
 	"[" +
@@ -192,26 +193,26 @@ window.addEventListener("resize", (e) => {
 // Add event listeners to buttons
 document.getElementById("startersbutton").addEventListener("click", function() {
     populateItems(starters);
-    changeBackgroundImage('assets/image/drinksImage.png'); // Replace with your image path
+    changeBackgroundImage('assets/image/starter.png'); // Replace with your image path
 });
 
 document.getElementById("mainsbutton").addEventListener("click", function() {
     populateItems(mains);
-    changeBackgroundImage('assets/image/foodmenu.png'); // Replace with your image path
+    changeBackgroundImage('assets/image/food.png'); // Replace with your image path
 });
 
 document.getElementById("dessertsbutton").addEventListener("click", function() {
     populateItems(desserts);
-    changeBackgroundImage('assets/image/drinksImage.png'); // Replace with your image path
+    changeBackgroundImage('assets/image/desert.png'); // Replace with your image path
 });
 
 document.getElementById("drinksbutton").addEventListener("click", function() {
     populateItems(drinks);
-    changeBackgroundImage('assets/image/drinksImage.png'); // Replace with your image path
+    changeBackgroundImage('assets/image/drinks.png'); // Replace with your image path
 });
 
 
 //default runs
 setIndicator(sl);
 populateItems(starters);
-changeBackgroundImage('assets/image/drinksImage.png'); // Replace with your image path
+changeBackgroundImage('assets/image/starter.png'); // Replace with your image path

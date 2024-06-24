@@ -15,7 +15,6 @@ Restaurant Menu
 body {
 	font-family: "Rubik", sans-serif;
     color: #111;
-    
 }
 
 .container {
@@ -49,6 +48,7 @@ body {
 	line-height: 150px;
 	font-size: 70px;
 	text-align: center;
+	color: white;
 }
 
 .indicators {
