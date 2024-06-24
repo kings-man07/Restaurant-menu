@@ -39,7 +39,7 @@ const starters = JSON.parse(
 		'{ "type":"food", "name":"Jade Soup [Chicken]", "description":"A green soup of Ming dynasty era made with Chinese spices, chicken, mushroom & corn, flavored with oriental spices", "price":"299", "food":"nonveg" },' +
 		'{ "type":"food", "name":"Jade Soup [Veg]", "description":"A green soup of Ming dynasty era made with Chinese spices, mushroom & corn, flavored with oriental spices", "price":"199" ,"food":"veg"},' +
 
-		'{ "type":"separator", "description":"APPETISER VEGETERIAN CLAY POT " },' +
+		'{ "type":"separator", "description":"APPETISER VEGETERIAN CLAYPOT" },' +
 
 		'{ "type":"food", "name":"Traditional Paneer Tikka", "description":"A North Indian delight featuring marinated paneer cheese and veggies grilled in a tandoor. Seasoned with lemon juice and chat masala, it’s a flavorful vegetarian treat", "price":"329","food":"veg","spicy":"mild" },' +
 		'{ "type":"food", "name":"Haryali Paneer Tikka", "description":"A delightful Indian appetizer featuring cubes of soft paneer, marinated in green Indian herbs paste with crisp bell peppers and onions", "price":"329","food":"veg" },' +
@@ -75,7 +75,7 @@ const starters = JSON.parse(
 		'{ "type":"food","food":"veg", "name":"Veggie Dumplings Manchurian", "description":"Delicious dish made with wisps of vegetables formed into dumplings and dunked into a sauce with a gorgeous interplay of hot, sweet, sour, and salty flavors", "price":"269" },' +
 		'{ "type":"food","food":"veg", "name":"Crispy Potatoes In Chilly Sesame Sauce", "description":"Popular Indo-Chinese starter made with crisp-fried potatoes, tossed in a slightly spicy, sweet, and sour chili sauce", "price":"269", "spicy":"mild" },' +
 		'{ "type":"food","food":"veg", "name":"Chilli Sauce Coated Crunchy Baby Corn", "description":"Popular Indo-Chinese starter made by deep-frying baby corn until golden brown and tossing it in a spicy and tangy onion-capsicum stir-fry sauce", "price":"269", "spicy":"hot" },' +
-		'{ "type":"food","food":"veg", "name":"Cottage Cheese In Choice Of Sauce", "description":"Choice of sauces: CHILLI/HOT GARLIC/SCHEZWAN/MANCHURIAN", "price":"349", "spicy":"mild" },' +
+		'{ "type":"food","food":"veg", "name":"Cottage Cheese In Choice of Sauce", "description":"Choice of sauces: CHILLI / HOT GARLIC / SCHEZWAN / MANCHURIAN", "price":"349", "spicy":"mild" },' +
 		'{ "type":"food","food":"veg", "name":"Veggies Crunchy Lollipops", "description":"Crispy fried lollipops made with a mix of vegetables like potatoes, cabbage, carrots, capsicum, and onions. Seasoned with Indian spices and served as a delightful vegetarian snack", "price":"269", "spicy":"mild" },' +
 		'{ "type":"food","food":"veg", "name":"Potato 65", "description":"Crispy and spicy potato snack where parboiled, cubed potatoes are doused in a spicy batter and fried until golden. Tossed with green chili and curry leaves", "price":"269", "spicy":"hot" },' +
 		'{ "type":"food","food":"veg", "name":"Paneer 65", "description":"Crispy and spicy cottage cheese snack where cubed paneer is doused in a spicy batter and fried until golden. Tossed with green chili and curry leaves", "price":"349", "spicy":"hot" },' +
@@ -98,16 +98,16 @@ const starters = JSON.parse(
 		'{ "type":"food","food":"nonveg", "name":"Prawn In Choice Of Sauce", "description":"Choice of sauces: CHILLI / HOT GARLIC / SCHEZWAN / MANCHOMIN", "price":"429", "spicy":"hot" },' +
 		'{ "type":"food","food":"nonveg", "name":"Smoked Sliced Lamb Dry In Choice Of Sauce", "description":"Choice of sauces: CHILLI / HOT GARLIC / SCHEZWAN / MANCHOMIN", "price":"499", "spicy":"hot" },'+
 
-'{ "type":"separator", "description":"SOUTH INDIAN" },' +
-'{ "type":"food","food":"veg", "name":"Podi Idli", "description":"Podi Idli, a quick South Indian breakfast featuring steamed idlis coated in spicy ground lentil condiment (Pod)", "price":"229" },' +
-'{ "type":"food","food":"veg", "name":"Chilli Idli", "description":"Fusion dish of fried idly tossed with oriental spices and soya chilli sauce", "price":"229", "spicy":"mild" },' +
-'{ "type":"food","food":"nonveg", "name":"Mriyalai Mamsun Vepudu", "description":"", "price":"529", "spicy":"hot" },' +
-'{ "type":"food","food":"nonveg", "name":"Rawa Fry Fish With Southern Spices", "description":"Mangalorean specialty featuring fish fillets coated in homemade masala and fine semolina (rava)", "price":"399" },' +
-'{ "type":"food","food":"veg", "name":"Aloo Gada Vepudu", "description":"", "price":"229" },' +
-'{ "type":"food","food":"nonveg", "name":"Green Chilli Kodi Andhra Style", "description":"Spicy Andhra-style dry chicken dish flavored mainly with green chilies", "price":"399", "spicy":"hot" },' +
-'{ "type":"food","food":"nonveg", "name":"Tawa Fried Rava Pomfret", "description":"Tawa crispy pomfret fry, tender inside and crispy outside, marinated with spices and pan-fried to perfection", "price":"599" },' +
-'{ "type":"food","food":"veg", "name":"Peregu Annam [Curd Rice]", "description":"South Indian favorite combining soft cooked rice with curd (yogurt), salts, and a flavorful tempering of spices and curry leaves", "price":"299" },' +
-'{ "type":"food","food":"veg", "name":"Nolu Pulu With Alam Chutney", "description":"Snack item made with split black grams, split Bengal grams, red chilies, tamarind, and aromatic spices, served with fiery ginger chutney", "price":"249" }'+
+		'{ "type":"separator", "description":"SOUTH INDIAN" },' +
+		'{ "type":"food","food":"veg", "name":"Podi Idli", "description":"Podi Idli, a quick South Indian breakfast featuring steamed idlis coated in spicy ground lentil condiment (Pod)", "price":"229" },' +
+		'{ "type":"food","food":"veg", "name":"Chilli Idli", "description":"Fusion dish of fried idly tossed with oriental spices and soya chilli sauce", "price":"229", "spicy":"mild" },' +
+		'{ "type":"food","food":"nonveg", "name":"Mriyalai Mamsun Vepudu", "description":"", "price":"529", "spicy":"hot" },' +
+		'{ "type":"food","food":"nonveg", "name":"Rawa Fry Fish With Southern Spices", "description":"Mangalorean specialty featuring fish fillets coated in homemade masala and fine semolina (rava)", "price":"399" },' +
+		'{ "type":"food","food":"veg", "name":"Aloo Gada Vepudu", "description":"", "price":"229" },' +
+		'{ "type":"food","food":"nonveg", "name":"Green Chilli Kodi Andhra Style", "description":"Spicy Andhra-style dry chicken dish flavored mainly with green chilies", "price":"399", "spicy":"hot" },' +
+		'{ "type":"food","food":"nonveg", "name":"Tawa Fried Rava Pomfret", "description":"Tawa crispy pomfret fry, tender inside and crispy outside, marinated with spices and pan-fried to perfection", "price":"599" },' +
+		'{ "type":"food","food":"veg", "name":"Peregu Annam [Curd Rice]", "description":"South Indian favorite combining soft cooked rice with curd (yogurt), salts, and a flavorful tempering of spices and curry leaves", "price":"299" },' +
+		'{ "type":"food","food":"veg", "name":"Nolu Pulu With Alam Chutney", "description":"Snack item made with split black grams, split Bengal grams, red chilies, tamarind, and aromatic spices, served with fiery ginger chutney", "price":"249" }'+
 	']'
 );
 const mains = JSON.parse(
@@ -127,40 +127,93 @@ const mains = JSON.parse(
 );
 const desserts = JSON.parse(
 	"[" + 
-		'{ "type":"separator", "description":"SWEETS" },' +
-		'{ "type":"food", "name":"CHOCOLATE MOUSSE", "description":"with star anise, a pecan brownie and salty caramel sauce", "price":"12.00" },' +
-		'{ "type":"food", "name":"TIRAMISU", "description":"rolled rhubarb pistachio with vanilla strawberry amaretto sauce", "price":"13.50" },' +
-		'{ "type":"food", "name":"FRUIT SALAD", "description":"exotic fruits with tapioca pearls mango sorbet and homemade coconut liqueur", "price":"10.50" } ]'
+		'{ "type":"separator", "description":"SWEETS OF BENGAL " },' +
+		'{ "type":"food","food":"veg", "name":"Raj Bhog", "description":"", "price":"119" },' +
+		'{ "type":"food","food":"veg", "name":"Gulab Jamun", "description":"", "price":"119" },' +
+		'{ "type":"food","food":"veg", "name":"Lady Kenny", "description":"", "price":"119" },' +
+		'{ "type":"food","food":"veg", "name":"Jol Bhora Sandesh", "description":"", "price":"149" },' +
+		'{ "type":"food","food":"veg", "name":"Baked Rosogulla", "description":"", "price":"199" },' +
+		'{ "type":"food","food":"veg", "name":"Baked Mihidana", "description":"", "price":"199" },' +
+		'{ "type":"food","food":"veg", "name":"Mini Gulab Jamun With Rabri", "description":"", "price":"149" },'+
+
+		'{ "type":"separator", "description":"ICE CREAM" },' +
+		'{ "type":"food","food":"veg", "name":"Choice Of Ice Cream (2 Scoops)", "description":"Vanilla / Butter Scotch / Chocolate / Mango / Strawberry", "price":"249" },' +
+		'{ "type":"food","food":"veg", "name":"Hot Brownie With Ice Cream", "description":"", "price":"249" },' +
+		'{ "type":"food","food":"veg", "name":"Grand Sundae", "description":"", "price":"299" }' +
+		']'
 );
 const drinks = JSON.parse(
 	"[" +
-		'{ "type":"separator", "description":"WATER & SODA" },' +
-		'{ "type":"drink", "name":"SPARKLING WATER", "description":"5dl", "price":"4.50" },' +
-		'{ "type":"drink", "name":"STILL WATER", "description":"5dl", "price":"4.50" },' +
-		'{ "type":"drink", "name":"SODA", "description":"3dl", "price":"5.50" },' +
-		'{ "type":"drink", "name":"TAP WATER", "description":"", "price":"FREE" },' +
-		'{ "type":"separator", "description":"BEER" },' +
-		'{ "type":"drink", "name":"BADENER GOLD", "description":"3dl", "price":"4.80" },' +
-		'{ "type":"drink", "name":"BADENER GOLD", "description":"5dl", "price":"7.00" },' +
-		'{ "type":"drink", "name":"QUÖLLFRISCH", "description":"5dl", "price":"7.50" },' +
-		'{ "type":"drink", "name":"BIER PAUL 02", "description":"3.3dl", "price":"6.00" },' +
-		'{ "type":"separator", "description":"RED WINE" },' +
-		'{ "type":"drink", "name":"MERLOT DEL TICINO", "description":"1dl", "price":"7.00" },' +
-		'{ "type":"drink", "name":"BOLGHERI ROSSO", "description":"1dl", "price":"8.50" },' +
-		'{ "type":"drink", "name":"NERO D’AVOLA IGT", "description":"1dl", "price":"7.50" },' +
-		'{ "type":"drink", "name":"MONTE CASTANHEIRO", "description":"1dl", "price":"8.00" },' +
-		'{ "type":"separator", "description":"WHITE WINE & CHAMPAGNE" },' +
-		'{ "type":"drink", "name":"ST. SAPHORIN7", "description":"1dl", "price":"7.00" },' +
-		'{ "type":"drink", "name":"BASILICATA BIANCO", "description":"1dl", "price":"7.50" },' +
-		'{ "type":"drink", "name":"TAITTINGER BRUT", "description":"7.5dl", "price":"91.00" },' +
-		'{ "type":"separator", "description":"WHISKY" },' +
-		'{ "type":"drink", "name":"OBAN 14 YEARS", "description":"4cl", "price":"13.50" },' +
-		'{ "type":"drink", "name":"LAGAVULIN 16 YEARS", "description":"4cl", "price":"15.00" },' +
-		'{ "type":"drink", "name":"MACALLEN AMBER", "description":"4cl", "price":"16.00" },' +
-		'{ "type":"separator", "description":"HOT DRINKS" },' +
-		'{ "type":"drink", "name":"ESPRESSO", "description":"", "price":"4.50" },' +
-		'{ "type":"drink", "name":"CAFE LATTE", "description":"", "price":"4.50" },' +
-		'{ "type":"drink", "name":"TEA", "description":"", "price":"5.00" } ]'
+		'{ "type":"separator", "description":"SINGLE MALT (30 ML)" },' +
+'{ "type":"food", "name":"GLENFIDDICH 15 YR", "description":"", "price":"610" },' +
+'{ "type":"food", "name":"GLENLIVET", "description":"", "price":"380" },' +
+'{ "type":"separator", "description":"SCOTCH WHISKY (30 ML)" },' +
+'{ "type":"food", "name":"J W BLUE LABLE", "description":"", "price":"1200" },' +
+'{ "type":"food", "name":"JW. DOUBLE BLACK", "description":"", "price":"350" },' +
+'{ "type":"food", "name":"CHIVAS REGAL", "description":"", "price":"350" },' +
+'{ "type":"food", "name":"JW. BLACK LABEL", "description":"", "price":"300" },' +
+'{ "type":"food", "name":"BALLANTINE’S", "description":"", "price":"280" },' +
+'{ "type":"food", "name":"BLACK & WHITE 12 YR", "description":"", "price":"250" },' +
+'{ "type":"food", "name":"TEACHER’S 50", "description":"", "price":"240" },' +
+'{ "type":"food", "name":"J&B", "description":"", "price":"199" },' +
+'{ "type":"food", "name":"JW. RED LABEL", "description":"", "price":"180" },' +
+'{ "type":"food", "name":"TEACHER’S HIGHLAND", "description":"", "price":"180" },' +
+'{ "type":"food", "name":"BLACK & WHITE", "description":"", "price":"180" },' +
+'{ "type":"food", "name":"100 PIPPERS", "description":"", "price":"170" },' +
+'{ "type":"food", "name":"VAT 69", "description":"", "price":"170" },' +
+'{ "type":"food", "name":"BLACK DOG CENTENARY", "description":"", "price":"170" },' +
+'{ "type":"food", "name":"WILLIAM LAWSONS", "description":"", "price":"170" },' +
+'{ "type":"food", "name":"PASSPORT", "description":"", "price":"170" },' +
+'{ "type":"separator", "description":"BOURBON WHISKEY (30 ML)" },' +
+'{ "type":"food", "name":"JIM BEAM", "description":"", "price":"180" },' +
+'{ "type":"separator", "description":"TENNESSE WHISKY (30 ML)" },' +
+'{ "type":"food", "name":"JACK DANIELS", "description":"", "price":"299" },' +
+'{ "type":"separator", "description":"IRISH WHISKY (30ml)" },' +
+'{ "type":"food", "name":"JAMESON", "description":"", "price":"250" },' +
+'{ "type":"separator", "description":"FINEST PREMIUM WHISKY (30 ML)" },' +
+'{ "type":"food", "name":"STERLING RESRVE B-10", "description":"", "price":"150" },' +
+'{ "type":"food", "name":"SIGNATURE", "description":"", "price":"150" },' +
+'{ "type":"food", "name":"BLENDERS PRIDE RESERVE", "description":"", "price":"150" },' +
+'{ "type":"food", "name":"ANTIQUETY BLUE", "description":"", "price":"130" },' +
+'{ "type":"food", "name":"BLENDERS PRIDE", "description":"", "price":"130" },'+
+
+'{ "type":"separator", "description":"VODKA (30 ML)" },' +
+'{ "type":"food", "name":"GREY GOOSE", "description":"", "price":"350" },' +
+'{ "type":"food", "name":"CEIROC", "description":"", "price":"350" },' +
+'{ "type":"food", "name":"ABSOLUTE", "description":"", "price":"200" },' +
+'{ "type":"food", "name":"SMIRNOFF GREEN APPLLE", "description":"", "price":"110" },' +
+'{ "type":"food", "name":"SMIRNOFF", "description":"", "price":"100" },' +
+'{ "type":"separator", "description":"COGNAC (30ML)" },' +
+'{ "type":"food", "name":"HENNESSY", "description":"", "price":"882" },' +
+'{ "type":"separator", "description":"RUM (30 ML)" },' +
+'{ "type":"food", "name":"BACARDI LEMON", "description":"", "price":"110" },' +
+'{ "type":"food", "name":"BACARDI WHITE", "description":"", "price":"100" },' +
+'{ "type":"food", "name":"OLD MONK GOLD RESERVE", "description":"", "price":"100" },' +
+'{ "type":"separator", "description":"GIN (30 ML)" },' +
+'{ "type":"food", "name":"BOMBAY SAPPHIRE", "description":"", "price":"220" },' +
+'{ "type":"separator", "description":"TEQUILA (30 ML)" },' +
+'{ "type":"food", "name":"BLANCO / GOLD", "description":"", "price":"230" },' +
+'{ "type":"separator", "description":"LIQUEUR (30 ML)" },' +
+'{ "type":"food", "name":"SAMBUCA", "description":"", "price":"220" },' +
+'{ "type":"food", "name":"BAILEY’S", "description":"", "price":"200" },' +
+'{ "type":"separator", "description":"BEER" },' +
+'{ "type":"food", "name":"HEINEKEN", "description":"", "price":"450" },' +
+'{ "type":"food", "name":"BUDWISER MAGNUM", "description":"", "price":"400" },' +
+'{ "type":"food", "name":"CORONA", "description":"", "price":"400" },' +
+'{ "type":"food", "name":"BIRA (650ML)", "description":"", "price":"400" },' +
+'{ "type":"food", "name":"CARLSBERG", "description":"", "price":"350" },' +
+'{ "type":"food", "name":"TUBORG", "description":"", "price":"300" },' +
+'{ "type":"food", "name":"KINGFISHER", "description":"", "price":"300" },' +
+'{ "type":"food", "name":"BIRA WHITE (330 ML)", "description":"", "price":"280" },' +
+'{ "type":"food", "name":"L.AB BACARDI BREEZER", "description":"", "price":"220" },' +
+'{ "type":"separator", "description":"RED WINE GLASS / BOTTLE" },' +
+'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"300 / 1900" },' +
+'{ "type":"food", "name":"IMPORTED", "description":"", "price":"460 / 2750" },' +
+'{ "type":"separator", "description":"WHITE WINE GLASS / BOTTLE" },' +
+'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"300 / 1900" },' +
+'{ "type":"food", "name":"IMPORTED", "description":"", "price":"460 / 2750" }' +
+
+		' ]'
 );
 
 /////////////////////////////////////////////////////////////////
