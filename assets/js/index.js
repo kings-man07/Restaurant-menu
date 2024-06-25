@@ -211,7 +211,49 @@ const drinks = JSON.parse(
 '{ "type":"food", "name":"IMPORTED", "description":"", "price":"460 / 2750" },' +
 '{ "type":"separator", "description":"WHITE WINE GLASS / BOTTLE" },' +
 '{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"300 / 1900" },' +
-'{ "type":"food", "name":"IMPORTED", "description":"", "price":"460 / 2750" }' +
+'{ "type":"food", "name":"IMPORTED", "description":"", "price":"460 / 2750" },' +
+
+'{ "type":"separator", "description":"COCKTAIL" },' +
+'{ "type":"food", "name":"LONG ISLAND ICE TEA", "description":"Long Island Iced Tea is a type of alcoholic mixed drink typically made with vodka, tequila, light rum, triple sec & gin toppled on ice", "price":"749" },' +
+'{ "type":"food", "name":"TAQUILA SUNRICE", "description":"cocktail made of tequila, orange juice, and grenadine syrup", "price":"559" },' +
+'{ "type":"food", "name":"MARGARITA", "description":"tequila, orange liquor and lime juice served with salt on the rim of the glass", "price":"559" },' +
+'{ "type":"food", "name":"GRAND SPECIAL", "description":"", "price":"559" },' +
+'{ "type":"food", "name":"GIMLET", "description":"cocktail blended with gins, sugar syrup and lime juice", "price":"453" },' +
+'{ "type":"food", "name":"MOJITO", "description":"white rum, sugar, lime juice, soda water, and mint. Its a combination of sweetness with citrus, and herbaceous mint flavors", "price":"349" },' +
+'{ "type":"food", "name":"PINACOLADA", "description":"a sweet cocktail made from rum, coconut cream / coconut milk, and pineapple juice, served with blended ice", "price":"349" },' +
+'{ "type":"food", "name":"APPLE TINI", "description":"vodka and apple juice these tasty Apple Martinis are perfect for a little rest and relaxation", "price":"349" },' +
+'{ "type":"food", "name":"WHISKY SOUR", "description":"whiskey, lemon juice and sugar with a dash of egg white[optional]", "price":"349" },' +
+'{ "type":"food", "name":"COSMOPOLITON", "description":"vodlka, triple sec, cranberry juice, with freshly squeezed lime juice", "price":"349" },' +
+'{ "type":"food", "name":"DAIQUIRI", "description":"a unique blend of rum, citrus juice, and sugar or other sweetener", "price":"349" },' +
+'{ "type":"food", "name":"SCREWDRIVER", "description":"screwdriver is a popular alcoholic highball drink made with a unique blend of orange juices and vodka", "price":"349" },' +
+'{ "type":"food", "name":"PINK VODKA LAMONADE", "description":"Combination of cranberry juice, vodka and lemonade", "price":"349" },'+
+
+'{ "type":"separator", "description":"MOCKTAIL" },' +
+'{ "type":"food", "name":"Arnold Palmer", "description":"Ice Tea With Lemonade", "price":"199" },' +
+'{ "type":"food", "name":"Sweet Sunrise", "description":"Orange Juice With Grenadine Syrup", "price":"199" },' +
+'{ "type":"food", "name":"Pomegranate Mojito", "description":"Pomegranate Juice, Mint Leaves & Lemon Club Soda", "price":"199" },' +
+'{ "type":"food", "name":"Coconut Martini", "description":"Pine Apple Juice, Vanilla Ice Cream & Coconut Milk", "price":"199" },' +
+'{ "type":"food", "name":"Trance Rainbow", "description":"Pineapple Juice, Lemonade, Blue Courage, Grenadine Syrup", "price":"199" },' +
+'{ "type":"food", "name":"Iced Chocolate", "description":"Chocolate Ice Cream, Chocolate Syrup & Coffee", "price":"199" },' +
+'{ "type":"food", "name":"Sparkling Blue", "description":"Blue Courage, Lemonade", "price":"199" },' +
+'{ "type":"food", "name":"Strawberry Margarita", "description":"Drink Made With Strawberries Crush, Orange And Lime Juices", "price":"199" },' +
+'{ "type":"food", "name":"Fruit Punch", "description":"Mock tail Blended With Vanilla Ice Cream, Mixed Fruit Garnished With Fresh Pomegranate", "price":"199" },' +
+'{ "type":"food", "name":"Cindrella", "description":"Mix With Orange Juice, Pineapple Juice & Lemonade", "price":"199" },' +
+'{ "type":"food", "name":"Cold Coffee", "description":"", "price":"199" },' +
+'{ "type":"food", "name":"Shake [Choose Your Flavour]", "description":"Vanilla, Chocolate, Strawberry, Mango", "price":"199" },' +
+'{ "type":"food", "name":"Lassi", "description":"", "price":"199" },' +
+'{ "type":"food", "name":"Butter Milk [Chach]", "description":"", "price":"149" },' +
+'{ "type":"food", "name":"Masala Soft Drinks", "description":"", "price":"99" },' +
+'{ "type":"food", "name":"Aerated Drinks", "description":"", "price":"99" },' +
+'{ "type":"food", "name":"Fresh Lime Soda", "description":"", "price":"99" },' +
+'{ "type":"food", "name":"Gondhoraj Lebur Sorbot", "description":"", "price":"99" },' +
+'{ "type":"food", "name":"Package Drinking Water", "description":"", "price":"39" },' +
+
+'{ "type":"separator", "description":"HOT BEVERAGE" },' +
+'{ "type":"food", "name":"Tea", "description":"Ginger, Lemon, Black", "price":"49" },' +
+'{ "type":"food", "name":"Masala Tea", "description":"", "price":"49" },' +
+'{ "type":"food", "name":"Coffee", "description":"", "price":"49" }' +
+
 
 		' ]'
 );
