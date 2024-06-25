@@ -112,18 +112,206 @@ const starters = JSON.parse(
 );
 const mains = JSON.parse(
 	"[" +
-		'{ "type":"separator", "description":"PIZZA" },' +
-		'{ "type":"food", "name":"MARGHERITA", "description":"Tomato sauce, mozzarella, organic oregano", "price":"18.00" , "spicy":"mild"},' +
-		'{ "type":"food", "name":"PROSCIUTTO", "description":"Tomato sauce, mozzarella, ham, organic oregano", "price":"21.50" },' +
-		'{ "type":"food", "name":"SALAME", "description":"Tomato sauce, mozzarella, salami, organic oregano", "price":"21.00"},' +
-		'{ "type":"food", "name":"TONNO", "description":"Tomato sauce, mozzarella, tuna MSC, capers, organic oregano", "price":"19.50" },' +
-		'{ "type":"separator", "description":"MEAT & FISH" },' +
-		'{ "type":"food", "name":"SURF & TURF", "description":"Beef entrecôte with herb butter, vegetables and  fries", "price":"48.00" },' +
-		'{ "type":"food", "name":"RUMP STEAK", "description":"with café de paris herbs butter, fries and vegetables", "price":"35.00" },' +
-		'{ "type":"food", "name":"FISH & CHIPS", "description":"Cod in beer batter with french fries and mashed peas", "price":"25.00" },' +
-		'{ "type":"separator", "description":"PASTA" },' +
-		'{ "type":"food", "name":"LINGUINE", "description":"on spinach sauce with cherry tomatoes, fennel, feta and pine nuts", "price":"25.00" },' +
-		'{ "type":"food", "name":"RAVIOLI", "description":"filled with truffle-ricotta and hazelnuts butter", "price":"28.50" } ]'
+		'{ "type":"separator", "description":"CHEF CRAFTED MENU RUSTIC RAJASTHAN" },' +
+'{ "type":"food","food":"veg", "name":"Jodhpuri Till Aloo", "description":"", "price":"229" },' +
+'{ "type":"food","food":"veg", "name":"Sabzi Achari", "description":"", "price":"249" },' +
+'{ "type":"food","food":"nonveg", "name":"Lal Mass", "description":"A traditional Indian curry from Rajasthan, features mutton marinated in kachari cucumbers, yogurt, and fiery Mathania red chilli peppers.", "price":"529" },' +
+'{ "type":"food","food":"nonveg", "name":"Mewari Dhania Murgh", "description":"", "price":"429" },' +
+'{ "type":"food","food":"veg", "name":"Sabzi Kofte In Creamy Makhani Gravy", "description":"A delightful Indian dish where vegetable koftas swim in a healthy, low-fat tomato-based gravy.", "price":"249" },' +
+
+'{ "type":"separator", "description":"NORTH WEST FRONTIER PROVINCE" },' +
+'{ "type":"food","food":"veg", "name":"Paneer Rawalpindi", "description":"", "price":"349" },' +
+'{ "type":"food","food":"veg", "spicy":"mild", "name":"Khumb Hara Piyaza", "description":"A delightful Punjabi dish, features fresh button mushrooms and spring onions cooked in aromatic spices.", "price":"299" },' +
+'{ "type":"food","food":"veg", "name":"Dhangri Hara Moti Masala", "description":"A delightful Indian dish, features button mushrooms, green peas, and spring onions cooked in aromatic spices.", "price":"299" },' +
+'{ "type":"food","food":"veg", "spicy":"mild", "name":"Paneer Sabzi With Smoky Kadhai Masala", "description":"A vibrant Indian dish, features soft paneer cubes cooked with onions, bell peppers, and freshly ground spices.", "price":"349" },' +
+'{ "type":"food","food":"veg", "name":"Meethi Matar Paneer", "description":"Creamy paneer in a mildly sweet gravy with hints of bitterness from fenugreek leaves.", "price":"349" },' +
+'{ "type":"food","food":"veg", "spicy":"mild", "name":"Paneer Tikka Makhani", "description":"Rich and flavourful Indian curry featuring marinated grilled paneer in a creamy tomato-based sauce.", "price":"349" },' +
+'{ "type":"food","food":"veg", "name":"Paneer Makhani", "description":"A delectable Indian dish made with creamy tomato-based sauce and cubes of cheese.", "price":"349" },' +
+'{ "type":"food","food":"veg", "name":"Paneer Lababdar", "description":"A creamy, flavourful, and rich Indian dish made with cubed and grated paneer in a luxurious tomato-based gravy.", "price":"349" },' +
+'{ "type":"food","food":"veg", "name":"Aloo Jeera", "description":"Cumin potatoes. Made with a combination of potatoes, cumin seeds, oil, chilli peppers, red chilli powder, turmeric, coriander, salt, and lemon juice.", "price":"229" },' +
+'{ "type":"food","food":"veg", "name":"Palak Paneer", "description":"A deliciously creamy Indian curry made with paneer in a smooth spinach sauce.", "price":"349" },' +
+'{ "type":"food","food":"veg", "name":"Dum Aloo Anardana", "description":"A flavourful Indian dish where potatoes are slow-cooked in a spicy yogurt-based gravy, infused with pomegranate seeds.", "price":"229" },' +
+'{ "type":"food","food":"veg", "name":"Aloo Methi", "description":"Stir-fried potatoes with fenugreek leaves, seasoned with whole and ground spices.", "price":"229" },' +
+'{ "type":"food","food":"veg", "name":"Hing Aloo", "description":"Boiled potatoes are mixed with roasted cumin seeds and asafoetida, resulting in a delicious dish.", "price":"229" },' +
+'{ "type":"food","food":"veg", "name":"Sabzi Milani", "description":"A traditional Indian dish originating from Lucknow, featuring seasonal vegetables in a garlic and spinach sauce.", "price":"249" },' +
+'{ "type":"food","food":"veg", "name":"Nizami Handi", "description":"A creamy and royal Indian curry made with a combination of veggies, spices, and a makhani sauce.", "price":"249" },' +
+'{ "type":"food","food":"veg", "name":"Aloo Gobi Adraki", "description":"", "price":"249" },' +
+'{ "type":"food","food":"veg", "name":"Bhindi Do Pyaza", "description":"North Indian dish made with okra, caramelized onions, and a smoky flavour.", "price":"249" },' +
+'{ "type":"food","food":"veg", "name":"Lahori Sabzi Kofta", "description":"", "price":"249" },' +
+'{ "type":"food","food":"veg", "name":"Cheesy Malai Kofta Zafrani", "description":"", "price":"349" },' +
+'{ "type":"food","food":"veg", "name":"Lasuni Bhuja Palak", "description":"Garlic Spinach Curry, blends the freshness of spinach with the rich flavour of garlic, the warmth of spices, and the nutty goodness of cashews.", "price":"249" },' +
+'{ "type":"food","food":"veg", "name":"Corn Masala Capsicum", "description":"A vibrant blend of juicy yellow sweet corn kernels and colourful capsicums in a creamy onion-based gravy.", "price":"249" },' +
+'{ "type":"food","food":"veg", "name":"Gobi Mattar Capsicum", "description":"A dry, lightly spiced Indian dish. It features blanched cauliflower florets, cooked green peas, and a subtly spiced onion-tomato masala.", "price":"249" },' +
+
+'{ "type":"separator", "description":"NON VEG MAIN COURSE [CHICKEN]" },' +
+'{ "type":"food","food":"nonveg", "name":"Murgh Keema Matar", "description":"A dish of minced chicken, peas, and spices cooked in a rich and creamy sauce.", "price":"429" },' +
+'{ "type":"food","food":"nonveg", "name":"Murgh Changezi", "description":"A Mughal chicken curry with milk, nuts, cream, and tomatoes.", "price":"429" },' +
+'{ "type":"food","food":"nonveg", "name":"Murgh Tikka Makhani", "description":"A buttery chicken curry with yogurt, cream, and tomato sauce, also known as butter chicken.", "price":"429" },' +
+'{ "type":"food","food":"nonveg", "name":"Murgh Malai Reshmi Masala", "description":"A creamy chicken curry with cashew nuts and yogurt.", "price":"429" },' +
+'{ "type":"food","food":"nonveg", "name":"Chicken Tikka Masala", "description":"A British-Indian chicken curry with yogurt, cream, and tomato sauce.", "price":"429" },' +
+'{ "type":"food","food":"nonveg", "name":"Butter Chicken Delhi Style [Half]", "description":"Butter chicken Delhi style is a dish of buttery chicken pieces cooked in a spicy and creamy gravy.", "price":"399" },' +
+'{ "type":"food","food":"nonveg", "name":"Butter Chicken Delhi Style (Full)", "description":"Butter chicken Delhi style is a dish of buttery chicken pieces cooked in a spicy and creamy gravy.", "price":"599" },' +
+'{ "type":"food","food":"nonveg", "name":"Dhakai Murgh", "description":"Dhaka Murgh is a pan-roasted chicken with a spicy and sour gravy originating from Bangladesh.", "price":"429", "spicy":"hot" },' +
+'{ "type":"food","food":"nonveg", "name":"Kadhai Murgh", "description":"A spicy chicken curry with freshly ground kadai masala and tomatoes.", "price":"429", "spicy":"mild" },' +
+'{ "type":"food","food":"nonveg", "name":"Bhuna Murgh", "description":"A dry chicken curry with fried onion-tomato-spice paste and whole hot spices.", "price":"429" },' +
+'{ "type":"food","food":"nonveg", "name":"Chicken Curry", "description":"A dish of chicken and spices simmered in a sauce, often with tomatoes and yogurt.", "price":"429" },' +
+
+'{ "type":"separator", "description":"NON VEG MAIN COURSE [MUTTON]" },' +
+'{ "type":"food","food":"nonveg", "name":"Mutton Rogan Josh", "description":"A spiced lamb curry with yogurt, red chillies, and aromatic spices.", "price":"499" },' +
+'{ "type":"food","food":"nonveg", "name":"Bhuna Gosht Punjabi Style", "description":"A dry lamb curry with fried onion-tomato-spice paste and whole garam masala.", "price":"499" },' +
+'{ "type":"food","food":"nonveg", "name":"Delhi Wala Aloo Gosht", "description":"A dish of mutton, potatoes, and fried onion-tomato-spice paste.", "price":"499" },' +
+'{ "type":"food","food":"nonveg", "name":"Kadhai Gosht Husaini", "description":"A lamb curry with yogurt, nuts, cream, saffron, and smoky kadai masala.", "price":"499", "spicy":"mild" },' +
+'{ "type":"food","food":"nonveg", "name":"Bengali Style Mutton Jhol", "description":"", "price":"499" },' +
+'{ "type":"food","food":"nonveg", "name":"Assamese Bash Pora Mutton", "description":"Bamboo mutton is a dish of lamb, bamboo shoots, and spices cooked in a clay pot.", "price":"499", "spicy":"hot" },' +
+'{ "type":"food","food":"nonveg", "name":"Rada Gosht", "description":"A spicy stew of mutton pieces and minces with yogurt, tomatoes, and rich spices.", "price":"499" },' +
+
+'{ "type":"separator", "description":"BENGALI FISH" },' +
+'{ "type":"food","food":"nonveg", "name":"Fish Tawa Masala", "description":"A spicy fried fish with a tangy sauce of red chillies and curry leaves.", "price":"429", "spicy":"mild" },' +
+'{ "type":"food","food":"nonveg", "name":"Katla Macher Kalia", "description":"A spicy Bengali fish curry with onion, yogurt, and tomato spiced with kalonji seeds.", "price":"349" },' +
+'{ "type":"food","food":"nonveg", "name":"Jhinga Masala", "description":"A spicy fried shrimp dish with onion-tomato sauce and green chillies.", "price":"599" },' +
+'{ "type":"food","food":"nonveg", "name":"Katla Macher Jhol With Aloo", "description":"A Bengali fish curry with onion, tomato, ginger, and cumin-coriander paste and potatoes.", "price":"349" },' +
+
+'{ "type":"separator", "description":"CONTINENTAL" },' +
+'{ "type":"food", "food":"nonveg", "name":"Cilantro Chicken", "description":"Cilantro chicken is a dish of chicken, garlic, lime juice, and cilantro, marinated and grilled served with French fries and sauté vegetables.", "price":"429" },' +
+'{ "type":"food", "food":"nonveg", "name":"Panko Chicken", "description":"A crispy breaded chicken fried with panko crumbs, egg, flour, and seasoning, served with French fries and sauté vegetables.", "price":"429" },' +
+'{ "type":"food", "food":"nonveg", "name":"Spaghetti Chicken Meat Balls", "description":"A dish of spaghetti pasta, chicken balls, and tomato sauce, with cheese and herbs.", "price":"429" },' +
+'{ "type":"food", "food":"nonveg", "name":"Pasta Bolognese", "description":"A dish of pasta topped with roasted vegetables, fresh tomatoes, herbs, cheese, and balsamic vinegar", "price":"429" },' +
+'{ "type":"food", "food":"veg", "name":"BBQ Corstini", "description":"Toasted bread topped with roasted vegetables, fresh tomatoes, herbs, cheese, and balsamic vinegar", "price":"349" },' +
+'{ "type":"food", "food":"veg", "name":"Tomato Corstini", "description":"Toasted bread topped with roasted or fresh tomatoes, herbs, cheese, and balsamic vinegar", "price":"329" },' +
+'{ "type":"food", "food":"veg", "name":"Pasta Of The Day With Choice Of Salsa (Veg)", "description":"POMODORO FRESCO / PESTO DI BASILICO / ALFREDO / MILANCE OF TRIO", "price":"329" },' +
+'{ "type":"food", "food":"nonveg", "name":"Pasta Of The Day With Choice Of Salsa (Non Veg)", "description":"POMODORO FRESCO / PESTO DI BASILICO / ALFREDO / MILANCE OF TRIO", "price":"429" },' +
+'{ "type":"food", "food":"veg", "name":"Mushroom Ala King", "description":"Mushroom ala king is a creamy dish of mushroom, peppers, peas, and cheese", "price":"329" },' +
+'{ "type":"food", "food":"veg", "name":"Baked Vegetable Cheesy Augratin", "description":"A baked dish with vegetables, cheese sauce, bread crumbs, and fine herbs", "price":"329" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken Ala King", "description":"A dish made with chicken, mushrooms, peppers in creamy sauce", "price":"429" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken Stroganoff", "description":"Chicken strips cooked with mushrooms, onion, paprika, sour cream, mustard, parsley", "price":"429" },' +
+'{ "type":"food", "food":"veg", "name":"Lasagna Veg", "description":"Lasagna with roasted veggies, cheese sauce and fine herbs; gratinated to perfection", "price":"329" },' +
+'{ "type":"food", "food":"nonveg", "name":"Lasagna Chicken", "description":"Lasagna with roasted veggies, chicken, cheese sauce and fine herbs; gratinated to perfection", "price":"429" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken Sausage & Bell Pepper Tossed With Butter & Pepper", "description":"Diced chicken sausages and bell peppers tossed in sauces, butter and fresh grounded peppers", "price":"349" },' +
+'{ "type":"food", "food":"nonveg", "name":"Fish Finger", "description":"Fish fingers are small, thin fillets or bits of fish that are breaded and then fried, served with French fries and tartar sauce", "price":"399" },' +
+'{ "type":"food", "food":"nonveg", "name":"English Fish & Chips", "price":"399" },' +
+'{ "type":"food", "food":"nonveg", "name":"Diamond Fish Fry Kolkata Style", "description":"An Anglo Indian style fish fry marinated with green herbs and Indian spices, breaded and deep fried; best relished with kasundi", "price":"399" },' +
+'{ "type":"food", "food":"veg", "name":"French Fries", "description":"CAIZUN SPICES / CHEESE / PERIPERI", "price":"199" },' +
+'{ "type":"food", "food":"veg", "name":"Saute Corn & Green Peas With Butter & Herbs", "description":"Butter sauté American corn and green peas with salt and pepper", "price":"299" },' +
+'{ "type":"food", "food":"veg", "name":"Potato Cheese Pops", "price":"229" },' +
+'{ "type":"food", "food":"veg", "name":"Potato Wedges With Mustard Mayo", "description":"Garlic Sage Potato Wedges, oven-baked and crispy, served with truffle mustard mayonnaise", "price":"229" },' +
+'{ "type":"food", "food":"veg", "name":"Jalapino Cheese Ball", "description":"Creamy, Spicy, And Savoury Balls. Bursting With Jalapenos, Cheddar Cheese, And Olives", "price":"259" },' +
+'{ "type":"food", "food":"veg", "name":"Aloo Tikki With Salsa Ranchera", "description":"Aloo Tikki, a popular Indian street food, consists of spiced mashed potatoes, shallow-fried until crispy", "price":"229" },' +
+
+
+'{ "type":"separator", "description":"SIZZLERS" },' +
+'{ "type":"food", "food":"veg", "name":"Cottage Cheese Patties On Sizzlers With Spicy Peri Peri Chilly Sauce", "description":"Grilled cheese and vegetable patties served with rice and sauce on a hot plate", "price":"349" },' +
+'{ "type":"food", "food":"veg", "name":"Veg Patties On Sizzler With Aromatic Bbq Sauce", "description":"Vegetable patties served with rice and sauce on a hot plate", "price":"329" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken Steak Diana On Sizzler", "description":"Grilled chicken and vegetable with a peppery sauce, served on a hot iron plate", "price":"429" },' +
+'{ "type":"food", "food":"nonveg", "name":"Grilled Fish Steak On Sizzler With Lemon Butter Sauce", "description":"Grilled fish and vegetable with a tangy sauce, served on a hot iron plate with lemon butter sauce", "price":"429" },' +
+
+'{ "type":"separator", "description":"EGG LACIOUS" },' +
+'{ "type":"food", "food":"nonveg", "name":"Egg Bhurjee", "description":"Scrambled eggs with onion, tomato, spices, and cilantro and Indian spices", "price":"169", "spicy":"mild" },' +
+'{ "type":"food", "food":"nonveg", "name":"Cheese Masala Omelette", "description":"Eggs, cheese, onion, tomato, spices, coriander, green chilli", "price":"179" },' +
+'{ "type":"food", "food":"nonveg", "name":"Moroccan Egg With Salsa Arobita", "description":"Oiled poached egg baked in spicy tomato sauce gratinated with cheese and herbs", "price":"249", "spicy":"spicy" },' +
+'{ "type":"food", "food":"nonveg", "name":"Tawa Fried Egg With Pepper, Green Chilli & Onion", "description":"Eggs marinated with south Indian spices and curry leaves; shallow fried with spicy chilli", "price":"249", "spicy":"mild" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chilly Egg Southern Style", "description":"Boiled egg batter fried and tossed with hot Guntur chilly and Indian spices", "price":"249", "spicy":"mild" },' +
+
+'{ "type":"separator", "description":"SOYA CHAP" },' +
+'{ "type":"food", "food":"veg", "name":"Soya Chap With Bedgi Chilli Tikka", "description":"A spicy and tangy dish made with soya chunks, yogurt, cheese", "price":"299", "spicy":"mild" },' +
+'{ "type":"food", "food":"veg", "name":"Malai Soya Chap With Cheese & Cream Tikka", "description":"Soya chunks marinated in cheese, yogurt, cream, and spices and roasted in tandoor", "price":"299" },' +
+'{ "type":"food", "food":"veg", "name":"Yellow Chilli Soya Chap Tikka", "description":"Soya chunks with cheese, yogurt, and yellow chilli paste, roasted in tandoor", "price":"299", "spicy":"hot" },' +
+'{ "type":"food", "food":"veg", "name":"Methi Pudina Soya Chap Tikka", "description":"Soya chunks with cheese, yogurt, fenugreek, mint, and spices roasted in tandoor", "price":"229" },'+
+
+
+'{ "type":"separator", "description":"CHINESE / ORIENTAL MAIN COURSE" },' +
+'{ "type":"food", "food":"veg", "name":"Sliced Vegetable Hong Kong Style", "description":"", "price":"299" },' +
+'{ "type":"food", "food":"veg", "name":"Cottage Cheese & Kaju With Black Pepper Sauce", "description":"Cubes of cottage cheese and fried cashew nut cooked in black pepper sauce", "price":"349" },' +
+'{ "type":"food", "food":"veg", "name":"White Garlic Paneer & Mushroom With Bokchoy", "description":"Cottage cheese and mushroom sautéed with white garlic and oriental greens, mildly spicy", "price":"349" },' +
+'{ "type":"food", "food":"veg", "name":"Stir Fried Vegetables With Celery & Nuts", "description":"Chinese greens stir fried with celery and almonds in sesame oil", "price":"299" },' +
+'{ "type":"food", "food":"veg", "name":"Veggies In Thai Curry", "description":"Sliced vegetables, basil, and eggplant cooked in spicy and tangy Thai curry with coconut cream", "price":"299" },' +
+'{ "type":"food", "food":"veg", "name":"Duo Mushroom With Peppers In Schezwan Sauce", "description":"Two types of mushrooms and sweet peppers cooked in spicy Szechwan sauce", "price":"299", "spicy":"mild" },' +
+'{ "type":"food", "food":"veg", "name":"Diced Veggies With Chilli Basil Hot Sauce", "description":"Diced Chinese greens cooked in spicy chilli and holy basil sauce", "price":"299", "spicy":"mild" },' +
+'{ "type":"food", "food":"veg", "name":"Cantonese Style Chinese Green With Nuts", "description":"Oriental greens cooked with cashew nuts and spices in its own juice", "price":"299" },' +
+'{ "type":"food", "food":"veg", "name":"Baby Corn & Mushroom In Thai Coconut Sauce", "description":"Baby corn and button mushroom cooked with lemongrass, basil, and coconut cream", "price":"299" },' +
+'{ "type":"food", "food":"veg", "name":"Cottage Cheese In Choice Of Sauce", "description":"CHILLI PEPPER / SCHEZWAN / MANCHURIAN / HOT GARLIC / GINGER", "price":"349", "spicy":"mild" },' +
+'{ "type":"food", "food":"veg", "name":"Veg Ball In Choice Of Sauce", "description":"CHILLI PEPPER / SCHEZWAN / MANCHURIAN / HOT GARLIC / GINGER", "price":"299", "spicy":"mild" },' +
+'{ "type":"food", "food":"veg", "name":"Sweet & Sour Vegetables", "description":"Sliced oriental vegetables, cottage cheese, and pineapple cooked in sweet and sour, tangy tomato base sauce", "price":"299" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken With Bell Pepper", "description":"Cubes of chicken battered, deep fried, and tossed with soya chili sauce, an Indo Sino fusion", "price":"399" },' +
+'{ "type":"food", "food":"nonveg", "name":"Sliced Chicken With Fermented Chilly Sauce", "description":"Sliced chicken cooked with fermented chili, chopped garlic, and bell peppers", "price":"399" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken Bokchoy With White Garlic Sauce", "description":"Cubes of chicken cooked with white garlic and oriental greens; aromatic and flavorful", "price":"399" },' +
+
+'{ "type":"food", "food":"nonveg", "name":"Chicken Breast With Soya Chilly Sauce", "description":"Sliced chicken breast battered and deep fried, cooked in sweet soya and fiery chilli sauce", "price":"399" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken In Thai Red Curry", "description":"Sliced chicken, vegetables, basil, and eggplant cooked in spicy and tangy Thai red curry with coconut cream", "price":"399" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken & Cashewnut In Thai Spicy Sesame Sauce", "description":"Diced chicken and fried cashew nut cooked in lemon-flavored spicy sesame sauce", "price":"399" },' +
+'{ "type":"food", "food":"nonveg", "name":"Prawns With Thai Lime Basil And Spicy Chilly Sauce", "description":"Bay prawns cooked with spicy chilli, holy basil, and lemongrass", "price":"599" },' +
+'{ "type":"food", "food":"nonveg", "name":"Butter Prawns With Thai Basil & Coconut Sauce", "description":"Bay prawns tossed with chopped garlic, basil, coconut cream, and butter", "price":"599" },' +
+'{ "type":"food", "food":"nonveg", "name":"Fish With Soya Chilly & Sesame", "description":"Deep fried battered fish cooked with sweet dark soya sauce and toasted sesame seeds", "price":"399" },' +
+'{ "type":"food", "food":"nonveg", "name":"Fish & Shrimp In Thai Spicy Coconut Sauce", "description":"Fresh shrimps and fish simmered with lemongrass and Thai chili-flavored coconut cream", "price":"499" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken In Choice Of Sauce", "description":"CHILLI PEPPER / SCHEZWAN / MANCHURIAN / HOT GARLIC / GINGER", "price":"399", "spicy":"mild" },' +
+'{ "type":"food", "food":"nonveg", "name":"Fish In Choice Of Sauce", "description":"CHILLI PEPPER / SCHEZWAN / MANCHURIAN / HOT GARLIC / GINGER", "price":"399", "spicy":"mild" },' +
+'{ "type":"food", "food":"nonveg", "name":"Prawn In Choice Of Sauce", "description":"CHILLI PEPPER / SCHEZWAN / MANCHURIAN / HOT GARLIC / GINGER", "price":"599", "spicy":"mild" },'+
+
+
+'{ "type":"separator", "description":"CHINESE NOODLES (HAKKA / SCHEZWAN / CHILLI GARLIC)" },' +
+
+'{ "type":"food", "food":"veg", "name":"Veg", "description":"", "price":"249", "spicy":"mild" },' +
+'{ "type":"food", "food":"nonveg", "name":"Egg", "description":"", "price":"279", "spicy":"mild" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken", "description":"", "price":"299", "spicy":"mild" },' +
+'{ "type":"food", "food":"nonveg", "name":"Mixed", "description":"", "price":"349" , "spicy":"mild"},' +
+
+'{ "type":"separator", "description":"MEI FUN NOODLES SINGAPORE STYLE" },' +
+
+'{ "type":"food", "food":"veg", "name":"Veg Noodles", "description":"", "price":"249" },' +
+'{ "type":"food", "food":"nonveg", "name":"Egg Noodles", "description":"", "price":"279" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken Noodles", "description":"", "price":"329" },' +
+'{ "type":"food", "food":"nonveg", "name":"Mixed Noodles", "description":"", "price":"349" },' +
+
+'{ "type":"separator", "description":"CHINESE FRIED RICE ) (PLAIN / SCHEZWAN / CHILLI GARLIC)" },' +
+
+'{ "type":"food", "food":"veg", "name":"Veg Noodles", "description":"", "price":"249" , "spicy":"mild"},' +
+'{ "type":"food", "food":"nonveg", "name":"Egg Noodles", "description":"", "price":"279" , "spicy":"mild"},' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken Noodles", "description":"", "price":"299", "spicy":"mild" },' +
+'{ "type":"food", "food":"nonveg", "name":"Mixed Noodles", "description":"", "price":"349" , "spicy":"mild"},' +
+
+'{ "type":"separator", "description":"THAI FRIED RICE (CONTAIN PEANUTS)" },' +
+
+'{ "type":"food", "food":"veg", "name":"Veg", "description":"", "price":"249" },' +
+'{ "type":"food", "food":"nonveg", "name":"Egg", "description":"", "price":"279" },' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken", "description":"", "price":"329" },' +
+'{ "type":"food", "food":"nonveg", "name":"Mixed", "description":"", "price":"349" },'+
+
+
+'{ "type":"separator", "description":"RICE BOWL OF INDIA" },' +
+'{ "type":"food", "food":"veg", "name":"Steam Rice", "description":"", "price":"149" },' +
+'{ "type":"food", "food":"veg", "name":"Hara Muttor Ka Pulao", "description":"", "price":"199" },' +
+'{ "type":"food", "food":"veg", "name":"Piyaz Pudina Pulao", "description":"", "price":"199" },' +
+'{ "type":"food", "food":"veg", "name":"Ghee Jeera Rice", "description":"", "price":"199" },' +
+'{ "type":"food", "food":"veg", "name":"Kaju Kismis Pulao", "description":"", "price":"249" },' +
+'{ "type":"food", "food":"veg", "name":"Sabzi Pulao", "description":"", "price":"249" },' +
+'{ "type":"food", "food":"nonveg", "name":"Grand Kolkata Style Mutton Biryani", "description":"(SERVED WITH SALAN & RAITA)", "price":"549" },' +
+'{ "type":"food", "food":"nonveg", "name":"Grand Kolkata Style Chicken Biryani", "description":"(SERVED WITH SALAN & RAITA)", "price":"429" },' +
+'{ "type":"food", "food":"veg", "name":"Sabzi Biryani", "description":"", "price":"399" },' +
+
+'{ "type":"separator", "description":"DAL & PULSES" },' +
+'{ "type":"food", "food":"veg", "name":"Grand Dal Tadka", "description":"", "price":"299" },' +
+'{ "type":"food", "food":"veg", "name":"Yellow Dal Fry", "description":"", "price":"229" },' +
+'{ "type":"food", "food":"veg", "name":"Yellow Dal Tadka", "description":"", "price":"229" },' +
+'{ "type":"food", "food":"veg", "name":"Dal Palak", "description":"", "price":"229" },' +
+'{ "type":"food", "food":"veg", "name":"Dal Lasuni", "description":"", "price":"229" },' +
+'{ "type":"food", "food":"veg", "name":"Dal Makhani", "description":"", "price":"299" },' +
+
+'{ "type":"separator", "description":"INDIAN BREADS" },' +
+'{ "type":"food", "food":"veg", "name":"Tandoori Roti", "description":"", "price":"39" },' +
+'{ "type":"food", "food":"veg", "name":"Butter Tandoori Roti", "description":"", "price":"49" },' +
+'{ "type":"food", "food":"veg", "name":"Plain Naan", "description":"", "price":"59" },' +
+'{ "type":"food", "food":"veg", "name":"Butter Naan", "description":"", "price":"69" },' +
+'{ "type":"food", "food":"veg", "name":"Garlic Naan", "description":"", "price":"79" },' +
+'{ "type":"food", "food":"veg", "name":"Cheese Naan", "description":"", "price":"99" },' +
+'{ "type":"food", "food":"veg", "name":"Tandoori Laccha Parantha", "description":"", "price":"79" },' +
+'{ "type":"food", "food":"veg", "name":"Tandoori Ajwaini Parantha", "description":"", "price":"79" },' +
+'{ "type":"food", "food":"veg", "name":"Tandoori Pudina Parantha", "description":"", "price":"79" },' +
+'{ "type":"food", "food":"veg", "name":"Aloo Piyaz Ka Kulcha", "description":"", "price":"99" },' +
+'{ "type":"food", "food":"veg", "name":"Masala Kulcha", "description":"", "price":"119" },' +
+'{ "type":"food", "food":"veg", "name":"Grand Focaccia Kulcha", "description":"", "price":"129" }'
+
++
+
+ ' ]'
 );
 const desserts = JSON.parse(
 	"[" + 
