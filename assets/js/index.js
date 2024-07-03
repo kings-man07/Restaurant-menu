@@ -7,7 +7,7 @@ const starters = JSON.parse(
 		'{ "type":"food", "name":"Garden Fresh Green Salad", "description":"Green Veggies Cut and Served Fresh", "price":"149", "food":"veg"},' +
 		'{ "type":"food", "name":"Russian Salad", "description":"Salads Made From Boiled Vegetables, Pineapple And Eggless Mayonnaise", "price":"149","food":"veg"  },' +
 		'{ "type":"food", "name":"Pasta Salad With Sundried Tomatoes", "description":"Macaroni Pasta, Fresh Mozzarella, Basil, and Sun-Dried Tomatoes", "price":"149", "food":"veg" },' +
-		'{ "type":"food", "name":"Oriental Salad", "description":"Salads Made From Boiled Salads Full Of Cabbage, Carrots, Noodles, Green Onions, Tossed With OrientalÊDressing", "price":"149","food":"veg"  },' +
+		'{ "type":"food", "name":"Oriental Salad Dressing", "description":"Salads Made From Boiled Salads Full Of Cabbage, Carrots, Noodles, Green Onions, Tossed With OrientalÊDressing", "price":"149","food":"veg"  },' +
 		'{ "type":"food", "name":"Paneer Tikka Chat", "description":"Spicy, Tangy,Chat Made With Paneer Tikka, Onion And Bell Pepper", "price":"199", "food":"veg" , "spicy":"mild"},' +
 		'{ "type":"food", "name":"Cucumber Salad", "description":"Chopped Onions, Tomatoes, Cucumbers and A Salt, Pepper, Chilli, Lemon Dressing", "price":"149","food":"veg"  },' +
 		'{ "type":"food", "name":"Chicken Tikka Chat", "description":"Spicy, Tangy,Chat Tossed With Chicken Tikka, Onion, BellPepperAndIndianSpices", "price":"199", "food":"nonveg" , "spicy":"mild"},' +
@@ -16,7 +16,7 @@ const starters = JSON.parse(
 		'{ "type":"food", "name":"Masala Peanuts", "description":"", "price":"149", "food":"veg", "spicy":"mild" },' +
 		'{ "type":"food", "name":"Fried Masala Kajunuts", "description":"", "price":"229","food":"veg"  },' +
 		'{ "type":"food", "name":"Aloo & Chana Chat ", "description":"", "price":"199", "food":"veg" },' +
-		'{ "type":"food", "name":"Hatpata Masala Papad", "description":"", "price":"149","food":"veg", "spicy":"hot"  },' +
+		'{ "type":"food", "name":"Chatpata Masala Papad", "description":"", "price":"149","food":"veg", "spicy":"hot"  },' +
 		'{ "type":"food", "name":"Roasted Papad", "description":"", "price":"99", "food":"veg" },' +
 		'{ "type":"food", "name":"Plain Curd", "description":"", "price":"99","food":"veg"  },' +
 		'{ "type":"food", "name":"Choice Of Raita", "description":"Plain / Mixed Vegetable / Pineapple", "price":"149", "food":"veg" },' +
@@ -188,7 +188,7 @@ const mains = JSON.parse(
 '{ "type":"food", "food":"nonveg", "name":"Lasagna Chicken", "description":"Lasagna with roasted veggies, chicken, cheese sauce and fine herbs; gratinated to perfection", "price":"429" },' +
 '{ "type":"food", "food":"nonveg", "name":"Chicken Sausage & Bell Pepper Tossed With Butter & Pepper", "description":"Diced chicken sausages and bell peppers tossed in sauces, butter and fresh grounded peppers", "price":"349" },' +
 '{ "type":"food", "food":"nonveg", "name":"Fish Finger", "description":"Fish fingers are small, thin fillets or bits of fish that are breaded and then fried, served with French fries and tartar sauce", "price":"399" },' +
-'{ "type":"food", "food":"nonveg", "name":"English Fish & Chips", "price":"399" },' +
+'{ "type":"food", "food":"nonveg", "name":"English Fish & Chips","description":"", "price":"399" },' +
 '{ "type":"food", "food":"nonveg", "name":"Diamond Fish Fry Kolkata Style", "description":"An Anglo Indian style fish fry marinated with green herbs and Indian spices, breaded and deep fried; best relished with kasundi", "price":"399" },' +
 '{ "type":"food", "food":"veg", "name":"French Fries", "description":"CAIZUN SPICES / CHEESE / PERIPERI", "price":"199" },' +
 '{ "type":"food", "food":"veg", "name":"Saute Corn & Green Peas With Butter & Herbs", "description":"Butter sauté American corn and green peas with salt and pepper", "price":"299" },' +
