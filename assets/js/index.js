@@ -7,7 +7,7 @@ const starters = JSON.parse(
 		'{ "type":"food", "name":"Garden Fresh Green Salad", "description":"Green Veggies Cut and Served Fresh", "price":"149", "food":"veg"},' +
 		'{ "type":"food", "name":"Russian Salad", "description":"Salads Made From Boiled Vegetables, Pineapple And Eggless Mayonnaise", "price":"149","food":"veg"  },' +
 		'{ "type":"food", "name":"Pasta Salad With Sundried Tomatoes", "description":"Macaroni Pasta, Fresh Mozzarella, Basil, and Sun-Dried Tomatoes", "price":"149", "food":"veg" },' +
-		'{ "type":"food", "name":"Oriental Salad Dressing", "description":"Salads Made From Boiled Salads Full Of Cabbage, Carrots, Noodles, Green Onions, Tossed With OrientalÊDressing", "price":"149","food":"veg"  },' +
+		'{ "type":"food", "name":"Oriental Salad", "description":"Salads Made From Boiled Salads Full Of Cabbage, Carrots, Noodles, Green Onions, Tossed With Oriental Dressing", "price":"149","food":"veg"  },' +
 		'{ "type":"food", "name":"Paneer Tikka Chat", "description":"Spicy, Tangy,Chat Made With Paneer Tikka, Onion And Bell Pepper", "price":"199", "food":"veg" , "spicy":"mild"},' +
 		'{ "type":"food", "name":"Cucumber Salad", "description":"Chopped Onions, Tomatoes, Cucumbers and A Salt, Pepper, Chilli, Lemon Dressing", "price":"149","food":"veg"  },' +
 		'{ "type":"food", "name":"Chicken Tikka Chat", "description":"Spicy, Tangy,Chat Tossed With Chicken Tikka, Onion, BellPepperAndIndianSpices", "price":"199", "food":"nonveg" , "spicy":"mild"},' +
