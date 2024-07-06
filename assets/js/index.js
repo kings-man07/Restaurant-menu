@@ -261,7 +261,7 @@ const mains = JSON.parse(
 '{ "type":"food", "food":"nonveg", "name":"Chicken Noodles", "description":"", "price":"329" },' +
 '{ "type":"food", "food":"nonveg", "name":"Mixed Noodles", "description":"", "price":"349" },' +
 
-'{ "type":"separator", "description":"CHINESE FRIED RICE ) (PLAIN / SCHEZWAN / CHILLI GARLIC)" },' +
+'{ "type":"separator", "description":"CHINESE FRIED RICE (PLAIN / SCHEZWAN / CHILLI GARLIC)" },' +
 
 '{ "type":"food", "food":"veg", "name":"Veg ", "description":"", "price":"249" , "spicy":"mild"},' +
 '{ "type":"food", "food":"nonveg", "name":"Egg ", "description":"", "price":"279" , "spicy":"mild"},' +
