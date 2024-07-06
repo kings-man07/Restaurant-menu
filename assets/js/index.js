@@ -263,10 +263,10 @@ const mains = JSON.parse(
 
 '{ "type":"separator", "description":"CHINESE FRIED RICE ) (PLAIN / SCHEZWAN / CHILLI GARLIC)" },' +
 
-'{ "type":"food", "food":"veg", "name":"Veg Noodles", "description":"", "price":"249" , "spicy":"mild"},' +
-'{ "type":"food", "food":"nonveg", "name":"Egg Noodles", "description":"", "price":"279" , "spicy":"mild"},' +
-'{ "type":"food", "food":"nonveg", "name":"Chicken Noodles", "description":"", "price":"299", "spicy":"mild" },' +
-'{ "type":"food", "food":"nonveg", "name":"Mixed Noodles", "description":"", "price":"349" , "spicy":"mild"},' +
+'{ "type":"food", "food":"veg", "name":"Veg ", "description":"", "price":"249" , "spicy":"mild"},' +
+'{ "type":"food", "food":"nonveg", "name":"Egg ", "description":"", "price":"279" , "spicy":"mild"},' +
+'{ "type":"food", "food":"nonveg", "name":"Chicken ", "description":"", "price":"299", "spicy":"mild" },' +
+'{ "type":"food", "food":"nonveg", "name":"Mixed ", "description":"", "price":"349" , "spicy":"mild"},' +
 
 '{ "type":"separator", "description":"THAI FRIED RICE (CONTAIN PEANUTS)" },' +
 
