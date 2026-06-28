@@ -333,113 +333,389 @@ const desserts = JSON.parse(
 const drinks = JSON.parse(
 	"[" +
 		'{ "type":"separator", "description":"SINGLE MALT (30 ML)" },' +
-'{ "type":"food", "name":"GLENFIDDICH 15 YR", "description":"", "price":"610" },' +
-'{ "type":"food", "name":"GLENLIVET", "description":"", "price":"380" },' +
+
+// PRICE UPDATED: 610 -> 849
+'{ "type":"food", "name":"GLENFIDDICH 15 YR", "description":"", "price":"849" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"GLENFIDDICH 12 YR", "description":"", "price":"549" },' +
+
+// PRICE UPDATED: 380 -> 529
+'{ "type":"food", "name":"GLENLIVET", "description":"", "price":"529" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"INDRI", "description":"", "price":"479" },' +
+
 '{ "type":"separator", "description":"SCOTCH WHISKY (30 ML)" },' +
-'{ "type":"food", "name":"J W BLUE LABLE", "description":"", "price":"1200" },' +
-'{ "type":"food", "name":"JW. DOUBLE BLACK", "description":"", "price":"350" },' +
-'{ "type":"food", "name":"CHIVAS REGAL", "description":"", "price":"350" },' +
-'{ "type":"food", "name":"JW. BLACK LABEL", "description":"", "price":"300" },' +
-'{ "type":"food", "name":"BALLANTINE’S", "description":"", "price":"280" },' +
-'{ "type":"food", "name":"BLACK & WHITE 12 YR", "description":"", "price":"250" },' +
-'{ "type":"food", "name":"TEACHER’S 50", "description":"", "price":"240" },' +
-'{ "type":"food", "name":"J&B", "description":"", "price":"199" },' +
-'{ "type":"food", "name":"JW. RED LABEL", "description":"", "price":"180" },' +
-'{ "type":"food", "name":"TEACHER’S HIGHLAND", "description":"", "price":"180" },' +
-'{ "type":"food", "name":"BLACK & WHITE", "description":"", "price":"180" },' +
-'{ "type":"food", "name":"100 PIPPERS", "description":"", "price":"170" },' +
-'{ "type":"food", "name":"VAT 69", "description":"", "price":"170" },' +
-'{ "type":"food", "name":"BLACK DOG CENTENARY", "description":"", "price":"170" },' +
-'{ "type":"food", "name":"WILLIAM LAWSONS", "description":"", "price":"170" },' +
-'{ "type":"food", "name":"PASSPORT", "description":"", "price":"170" },' +
+
+// PRICE UPDATED: 1200 -> 1999
+'{ "type":"food", "name":"J W BLUE LABLE", "description":"", "price":"1999" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"JW. GOLD LABEL", "description":"", "price":"629" },' +
+
+// PRICE UPDATED: 350 -> 449
+'{ "type":"food", "name":"JW. DOUBLE BLACK", "description":"", "price":"449" },' +
+
+// PRICE UPDATED: 350 -> 399
+'{ "type":"food", "name":"CHIVAS REGAL", "description":"", "price":"399" },' +
+
+// PRICE UPDATED: 300 -> 399
+'{ "type":"food", "name":"JW. BLACK LABEL", "description":"", "price":"399" },' +
+
+// PRICE UPDATED: 280 -> 269
+'{ "type":"food", "name":"BALLANTINE’S", "description":"", "price":"269" },' +
+
+// REMOVED FROM NEW MENU
+// '{ "type":"food", "name":"BLACK & WHITE 12 YR", "description":"", "price":"250" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"100 PIPERS 12 YR", "description":"", "price":"349" },' +
+
+// PRICE UPDATED: 240 -> 319
+'{ "type":"food", "name":"TEACHER’S 50", "description":"", "price":"319" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"BLACK DOG GOLD RESERVE", "description":"", "price":"309" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"JW. BLONDE", "description":"", "price":"299" },' +
+
+// PRICE UPDATED: 199 -> 249
+'{ "type":"food", "name":"J&B", "description":"", "price":"249" },' +
+
+// PRICE UPDATED: 180 -> 249
+'{ "type":"food", "name":"JW. RED LABEL", "description":"", "price":"249" },' +
+
+// PRICE UPDATED: 180 -> 279
+'{ "type":"food", "name":"TEACHER’S HIGHLAND", "description":"", "price":"279" },' +
+
+// PRICE UPDATED: 180 -> 239
+'{ "type":"food", "name":"BLACK & WHITE", "description":"", "price":"239" },' +
+
+// PRICE UPDATED: 170 -> 239
+'{ "type":"food", "name":"100 PIPPERS", "description":"", "price":"239" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"BLACK DOG", "description":"", "price":"229" },' +
+
+// PRICE UPDATED: 170 -> 199
+'{ "type":"food", "name":"VAT 69", "description":"", "price":"199" },' +
+
+// REMOVED FROM NEW MENU
+// '{ "type":"food", "name":"BLACK DOG CENTENARY", "description":"", "price":"170" },' +
+
+// PRICE UPDATED: 170 -> 199
+'{ "type":"food", "name":"WILLIAM LAWSONS", "description":"", "price":"199" },' +
+
+// PRICE UPDATED: 170 -> 199
+'{ "type":"food", "name":"PASSPORT", "description":"", "price":"199" },' +
+
 '{ "type":"separator", "description":"BOURBON WHISKEY (30 ML)" },' +
-'{ "type":"food", "name":"JIM BEAM", "description":"", "price":"180" },' +
+
+// PRICE UPDATED: 180 -> 249
+'{ "type":"food", "name":"JIM BEAM", "description":"", "price":"249" },' +
+
 '{ "type":"separator", "description":"TENNESSE WHISKY (30 ML)" },' +
-'{ "type":"food", "name":"JACK DANIELS", "description":"", "price":"299" },' +
+
+// PRICE UPDATED: 299 -> 399
+'{ "type":"food", "name":"JACK DANIELS", "description":"", "price":"399" },' +
+
 '{ "type":"separator", "description":"IRISH WHISKY (30ml)" },' +
-'{ "type":"food", "name":"JAMESON", "description":"", "price":"250" },' +
+
+// PRICE UPDATED: 250 -> 279
+'{ "type":"food", "name":"JAMESON", "description":"", "price":"279" },' +
+
 '{ "type":"separator", "description":"FINEST PREMIUM WHISKY (30 ML)" },' +
-'{ "type":"food", "name":"STERLING RESRVE B-10", "description":"", "price":"150" },' +
-'{ "type":"food", "name":"SIGNATURE", "description":"", "price":"150" },' +
-'{ "type":"food", "name":"BLENDERS PRIDE RESERVE", "description":"", "price":"150" },' +
-'{ "type":"food", "name":"ANTIQUETY BLUE", "description":"", "price":"130" },' +
-'{ "type":"food", "name":"BLENDERS PRIDE", "description":"", "price":"130" },'+
+
+// REMOVED FROM NEW MENU
+// '{ "type":"food", "name":"STERLING RESRVE B-10", "description":"", "price":"150" },' +
+
+// PRICE UPDATED: 150 -> 139
+'{ "type":"food", "name":"SIGNATURE", "description":"", "price":"139" },' +
+
+// PRICE UPDATED: 150 -> 159
+'{ "type":"food", "name":"BLENDERS PRIDE RESERVE", "description":"", "price":"159" },' +
+
+// PRICE UPDATED: 130 -> 159
+'{ "type":"food", "name":"ANTIQUETY BLUE", "description":"", "price":"159" },' +
+
+// PRICE UPDATED: 130 -> 119
+'{ "type":"food", "name":"BLENDERS PRIDE", "description":"", "price":"119" },' +
+
+
+
+
+
+
+
+/////////////////////////////////////////////////
 
 '{ "type":"separator", "description":"VODKA (30 ML)" },' +
-'{ "type":"food", "name":"GREY GOOSE", "description":"", "price":"350" },' +
-'{ "type":"food", "name":"CEIROC", "description":"", "price":"350" },' +
-'{ "type":"food", "name":"ABSOLUTE", "description":"", "price":"200" },' +
-'{ "type":"food", "name":"SMIRNOFF GREEN APPLLE", "description":"", "price":"110" },' +
-'{ "type":"food", "name":"SMIRNOFF", "description":"", "price":"100" },' +
+
+// PRICE UPDATED: 350 -> 449
+'{ "type":"food", "name":"GREY GOOSE", "description":"", "price":"449" },' +
+
+// PRICE UPDATED: Name corrected CEIROC -> CIROC, Price 350 -> 449
+'{ "type":"food", "name":"CIROC", "description":"", "price":"449" },' +
+
+// PRICE UPDATED: Name corrected ABSOLUTE -> ABSOLUT, Price 200 -> 249
+'{ "type":"food", "name":"ABSOLUT", "description":"", "price":"249" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"ABSOLUT FLAVOUR", "description":"", "price":"269" },' +
+
+// PRICE UPDATED: Name changed SMIRNOFF GREEN APPLLE -> SMIRNOFF FLAVOUR, Price 110 -> 129
+'{ "type":"food", "name":"SMIRNOFF FLAVOUR", "description":"", "price":"129" },' +
+
+// PRICE UPDATED: 100 -> 119
+'{ "type":"food", "name":"SMIRNOFF", "description":"", "price":"119" },' +
+
 '{ "type":"separator", "description":"COGNAC (30ML)" },' +
-'{ "type":"food", "name":"HENNESSY", "description":"", "price":"882" },' +
+
+// PRICE UPDATED: 882 -> 999
+'{ "type":"food", "name":"HENNESSY", "description":"", "price":"999" },' +
+
 '{ "type":"separator", "description":"RUM (30 ML)" },' +
-'{ "type":"food", "name":"BACARDI LEMON", "description":"", "price":"110" },' +
-'{ "type":"food", "name":"BACARDI WHITE", "description":"", "price":"100" },' +
-'{ "type":"food", "name":"OLD MONK GOLD RESERVE", "description":"", "price":"100" },' +
+
+// PRICE UPDATED: Name changed BACARDI LEMON -> BACARDI FLAVOUR, Price 110 -> 119
+'{ "type":"food", "name":"BACARDI FLAVOUR", "description":"", "price":"119" },' +
+
+// PRICE UPDATED: 100 -> 119
+'{ "type":"food", "name":"BACARDI WHITE", "description":"", "price":"119" },' +
+
+// PRICE UPDATED: 100 -> 119
+'{ "type":"food", "name":"OLD MONK GOLD RESERVE", "description":"", "price":"119" },' +
+
 '{ "type":"separator", "description":"GIN (30 ML)" },' +
-'{ "type":"food", "name":"BOMBAY SAPPHIRE", "description":"", "price":"220" },' +
+
+// PRICE UPDATED: 220 -> 299
+'{ "type":"food", "name":"BOMBAY SAPPHIRE", "description":"", "price":"299" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"BEEFEATER", "description":"", "price":"249" },' +
+
 '{ "type":"separator", "description":"TEQUILA (30 ML)" },' +
-'{ "type":"food", "name":"BLANCO / GOLD", "description":"", "price":"230" },' +
+
+// PRICE UPDATED: 230 -> 399
+'{ "type":"food", "name":"BLANCO / GOLD", "description":"", "price":"399" },' +
+
 '{ "type":"separator", "description":"LIQUEUR (30 ML)" },' +
-'{ "type":"food", "name":"SAMBUCA", "description":"", "price":"220" },' +
-'{ "type":"food", "name":"BAILEY’S", "description":"", "price":"200" },' +
+
+// PRICE UPDATED: 220 -> 299
+'{ "type":"food", "name":"SAMBUCA", "description":"", "price":"299" },' +
+
+// PRICE UPDATED: 200 -> 299
+'{ "type":"food", "name":"BAILEY’S", "description":"", "price":"299" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"JAGERMEISTER", "description":"", "price":"419" },' +
+
 '{ "type":"separator", "description":"BEER" },' +
-'{ "type":"food", "name":"HEINEKEN", "description":"", "price":"450" },' +
-'{ "type":"food", "name":"BUDWISER MAGNUM", "description":"", "price":"400" },' +
-'{ "type":"food", "name":"CORONA", "description":"", "price":"400" },' +
-'{ "type":"food", "name":"BIRA (650ML)", "description":"", "price":"400" },' +
-'{ "type":"food", "name":"CARLSBERG", "description":"", "price":"350" },' +
-'{ "type":"food", "name":"TUBORG", "description":"", "price":"300" },' +
-'{ "type":"food", "name":"KINGFISHER", "description":"", "price":"300" },' +
-'{ "type":"food", "name":"BIRA WHITE (330 ML)", "description":"", "price":"280" },' +
-'{ "type":"food", "name":"L.AB BACARDI BREEZER", "description":"", "price":"220" },' +
+
+// PRICE UPDATED: 450 -> 599
+'{ "type":"food", "name":"HEINEKEN", "description":"", "price":"599" },' +
+
+// PRICE UPDATED: Name changed BUDWISER MAGNUM -> BUDWEISER, Price 400 -> 459
+'{ "type":"food", "name":"BUDWEISER", "description":"", "price":"459" },' +
+
+// PRICE UPDATED: 400 -> 459
+'{ "type":"food", "name":"CORONA", "description":"", "price":"459" },' +
+
+// REMOVED FROM NEW MENU
+// '{ "type":"food", "name":"BIRA (650ML)", "description":"", "price":"400" },' +
+
+// PRICE UPDATED: 350 -> 399
+'{ "type":"food", "name":"CARLSBERG", "description":"", "price":"399" },' +
+
+// PRICE UPDATED: 300 -> 349
+'{ "type":"food", "name":"TUBORG", "description":"", "price":"349" },' +
+
+// REMOVED FROM NEW MENU
+// '{ "type":"food", "name":"KINGFISHER", "description":"", "price":"300" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"KINGFISHER STRONG", "description":"", "price":"349" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"KINGFISHER ULTRA", "description":"", "price":"329" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"KINGFISHER ULTRA MAX", "description":"", "price":"419" },' +
+
+// REMOVED FROM NEW MENU
+// '{ "type":"food", "name":"BIRA WHITE (330 ML)", "description":"", "price":"280" },' +
+
+// PRICE UPDATED: 220 -> 249
+'{ "type":"food", "name":"L.AB BACARDI BREEZER", "description":"", "price":"249" },' +
+
 '{ "type":"separator", "description":"RED WINE GLASS / BOTTLE" },' +
-'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"300 / 1900" },' +
-'{ "type":"food", "name":"IMPORTED", "description":"", "price":"460 / 2750" },' +
+
+// PRICE UPDATED: 300 / 1900 -> 349 / 2189
+'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"349 / 2189" },' +
+
+// PRICE UPDATED: 460 / 2750 -> 529 / 3159
+'{ "type":"food", "name":"IMPORTED", "description":"", "price":"529 / 3159" },' +
+
 '{ "type":"separator", "description":"WHITE WINE GLASS / BOTTLE" },' +
-'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"300 / 1900" },' +
-'{ "type":"food", "name":"IMPORTED", "description":"", "price":"460 / 2750" },' +
+
+// PRICE UPDATED: 300 / 1900 -> 349 / 2189
+'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"349 / 2189" },' +
+
+// PRICE UPDATED: 460 / 2750 -> 529 / 3159
+'{ "type":"food", "name":"IMPORTED", "description":"", "price":"529 / 3159" },' +
+
+
+
+
+
+
+
+
+////////////////////////////////////////
+
+// NEW SECTION
+'{ "type":"separator", "description":"SHOOTER" },' +
+'{ "type":"food", "name":"B52", "description":"Cocktail is a layered shot composed of coffee liqueur, baileys, triple sec or cointreau", "price":"599" },' +
+'{ "type":"food", "name":"4TH OF JULY", "description":"Vodka, blue curacao, grenadine", "price":"499" },' +
+'{ "type":"food", "name":"KAMIKAZE SHOT", "description":"Vodka, triple sec and fresh lime juice shaken together with ice", "price":"499" },' +
+'{ "type":"food", "name":"MUDSLIDE SHOT", "description":"A classic dessert cocktail. Shake with vodka, baileys, coffee liqueur and cream for a delicious sweet treat", "price":"599" },' +
 
 '{ "type":"separator", "description":"COCKTAIL" },' +
-'{ "type":"food", "name":"LONG ISLAND ICE TEA", "description":"Long Island Iced Tea is a type of alcoholic mixed drink typically made with vodka, tequila, light rum, triple sec & gin toppled on ice", "price":"749" },' +
-'{ "type":"food", "name":"TAQUILA SUNRICE", "description":"cocktail made of tequila, orange juice, and grenadine syrup", "price":"559" },' +
-'{ "type":"food", "name":"MARGARITA", "description":"tequila, orange liquor and lime juice served with salt on the rim of the glass", "price":"559" },' +
-'{ "type":"food", "name":"GRAND SPECIAL", "description":"", "price":"559" },' +
-'{ "type":"food", "name":"GIMLET", "description":"cocktail blended with gins, sugar syrup and lime juice", "price":"453" },' +
-'{ "type":"food", "name":"MOJITO", "description":"white rum, sugar, lime juice, soda water, and mint. Its a combination of sweetness with citrus, and herbaceous mint flavors", "price":"349" },' +
-'{ "type":"food", "name":"PINACOLADA", "description":"a sweet cocktail made from rum, coconut cream / coconut milk, and pineapple juice, served with blended ice", "price":"349" },' +
-'{ "type":"food", "name":"APPLE TINI", "description":"vodka and apple juice these tasty Apple Martinis are perfect for a little rest and relaxation", "price":"349" },' +
-'{ "type":"food", "name":"WHISKY SOUR", "description":"whiskey, lemon juice and sugar with a dash of egg white[optional]", "price":"349" },' +
-'{ "type":"food", "name":"COSMOPOLITON", "description":"vodlka, triple sec, cranberry juice, with freshly squeezed lime juice", "price":"349" },' +
-'{ "type":"food", "name":"DAIQUIRI", "description":"a unique blend of rum, citrus juice, and sugar or other sweetener", "price":"349" },' +
-'{ "type":"food", "name":"SCREWDRIVER", "description":"screwdriver is a popular alcoholic highball drink made with a unique blend of orange juices and vodka", "price":"349" },' +
-'{ "type":"food", "name":"PINK VODKA LAMONADE", "description":"Combination of cranberry juice, vodka and lemonade", "price":"349" },'+
 
+// PRICE UPDATED: 749 -> 859
+'{ "type":"food", "name":"LONG ISLAND ICE TEA", "description":"Long Island Iced Tea is a type of alcoholic mixed drink typically made with vodka, tequila, light rum, triple sec & gin toppled on ice", "price":"859" },' +
+
+// PRICE UPDATED: Name corrected TAQUILA SUNRICE -> TEQUILA SUNRISE, Price 559 -> 639
+'{ "type":"food", "name":"TEQUILA SUNRISE", "description":"cocktail made of tequila, orange juice, and grenadine syrup", "price":"639" },' +
+
+// PRICE UPDATED: 559 -> 639
+'{ "type":"food", "name":"MARGARITA", "description":"tequila, orange liquor and lime juice served with salt on the rim of the glass", "price":"639" },' +
+
+// PRICE UPDATED: Description added, Price 559 -> 639
+'{ "type":"food", "name":"GRAND SPECIAL", "description":"Combination of rum, blue curacao, lime juice, top up with whisky", "price":"639" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"MAI TAI", "description":"Combination of dark rum, white rum, triple sec, pineapple juice, lime juice, orgeat syrup", "price":"449" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"JAGER BOMB", "description":"Combination of Jagermeister and red bull", "price":"799" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"MINT JULEP", "description":"Muddle the mint leaves with sugar, add crushed ice, pour bourbon whiskey, stirred for perfect minty taste", "price":"599" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"BLACK RUSSIAN", "description":"Combination of vodka, coffee liqueur shaken together with ice", "price":"449" },' +
+
+// PRICE UPDATED: 453 -> 599
+'{ "type":"food", "name":"GIMLET", "description":"cocktail blended with gins, sugar syrup and lime juice", "price":"599" },' +
+
+// PRICE UPDATED: 349 -> 449
+'{ "type":"food", "name":"MOJITO", "description":"white rum, sugar, lime juice, soda water, and mint. Its a combination of sweetness with citrus, and herbaceous mint flavors", "price":"449" },' +
+
+// PRICE UPDATED: Name corrected PINACOLADA -> PINA COLADA, Price 349 -> 449
+'{ "type":"food", "name":"PINA COLADA", "description":"a sweet cocktail made from rum, coconut cream / coconut milk, and pineapple juice, served with blended ice", "price":"449" },' +
+
+// PRICE UPDATED: Name corrected APPLE TINI -> APPLETINI, Price 349 -> 449
+'{ "type":"food", "name":"APPLETINI", "description":"vodka and apple juice these tasty Apple Martinis are perfect for a little rest and relaxation", "price":"449" },' +
+
+// PRICE UPDATED: 349 -> 449
+'{ "type":"food", "name":"WHISKY SOUR", "description":"whiskey, lemon juice and sugar with a dash of egg white[optional]", "price":"449" },' +
+
+// PRICE UPDATED: Name corrected COSMOPOLITON -> COSMOPOLITAN, Price 349 -> 449
+'{ "type":"food", "name":"COSMOPOLITAN", "description":"vodka, triple sec, cranberry juice, with freshly squeezed lime juice", "price":"449" },' +
+
+// PRICE UPDATED: 349 -> 449
+'{ "type":"food", "name":"DAIQUIRI", "description":"a unique blend of rum, citrus juice, and sugar or other sweetener", "price":"449" },' +
+
+// PRICE UPDATED: 349 -> 449
+'{ "type":"food", "name":"SCREWDRIVER", "description":"screwdriver is a popular alcoholic highball drink made with a unique blend of orange juices and vodka", "price":"449" },' +
+
+// PRICE UPDATED: Name corrected PINK VODKA LAMONADE -> PINK VODKA LEMONADE, Price 349 -> 449
+'{ "type":"food", "name":"PINK VODKA LEMONADE", "description":"Combination of cranberry juice, vodka and lemonade", "price":"449" },' +
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////
 '{ "type":"separator", "description":"MOCKTAIL" },' +
-'{ "type":"food", "name":"Arnold Palmer", "description":"Ice Tea With Lemonade", "price":"199" },' +
-'{ "type":"food", "name":"Sweet Sunrise", "description":"Orange Juice With Grenadine Syrup", "price":"199" },' +
-'{ "type":"food", "name":"Pomegranate Mojito", "description":"Pomegranate Juice, Mint Leaves & Lemon Club Soda", "price":"199" },' +
-'{ "type":"food", "name":"Coconut Martini", "description":"Pine Apple Juice, Vanilla Ice Cream & Coconut Milk", "price":"199" },' +
-'{ "type":"food", "name":"Trance Rainbow", "description":"Pineapple Juice, Lemonade, Blue Courage, Grenadine Syrup", "price":"199" },' +
-'{ "type":"food", "name":"Iced Chocolate", "description":"Chocolate Ice Cream, Chocolate Syrup & Coffee", "price":"199" },' +
-'{ "type":"food", "name":"Sparkling Blue", "description":"Blue Courage, Lemonade", "price":"199" },' +
-'{ "type":"food", "name":"Strawberry Margarita", "description":"Drink Made With Strawberries Crush, Orange And Lime Juices", "price":"199" },' +
-'{ "type":"food", "name":"Fruit Punch", "description":"Mock tail Blended With Vanilla Ice Cream, Mixed Fruit Garnished With Fresh Pomegranate", "price":"199" },' +
-'{ "type":"food", "name":"Cindrella", "description":"Mix With Orange Juice, Pineapple Juice & Lemonade", "price":"199" },' +
+
+// PRICE UPDATED: 199 -> 229
+'{ "type":"food", "name":"Arnold Palmer", "description":"Ice Tea With Lemonade", "price":"229" },' +
+
+// PRICE UPDATED: 199 -> 229
+'{ "type":"food", "name":"Sweet Sunrise", "description":"Orange Juice With Grenadine Syrup", "price":"229" },' +
+
+// PRICE UPDATED: 199 -> 229
+'{ "type":"food", "name":"Pomegranate Mojito", "description":"Pomegranate Juice, Mint Leaves & Lemon Club Soda", "price":"229" },' +
+
+// PRICE UPDATED: 199 -> 229
+// DESCRIPTION UPDATED: Pine Apple -> Pineapple
+'{ "type":"food", "name":"Coconut Martini", "description":"Pineapple Juice, Vanilla Ice Cream & Coconut Milk", "price":"229" },' +
+
+// PRICE UPDATED: 199 -> 229
+// DESCRIPTION UPDATED: Blue Courage -> Blue Curacao
+'{ "type":"food", "name":"Trance Rainbow", "description":"Pineapple Juice, Lemonade, Blue Curacao, Grenadine Syrup", "price":"229" },' +
+
+// PRICE UPDATED: 199 -> 229
+'{ "type":"food", "name":"Iced Chocolate", "description":"Chocolate Ice Cream, Chocolate Syrup & Coffee", "price":"229" },' +
+
+// PRICE UPDATED: 199 -> 229
+// DESCRIPTION UPDATED: Blue Courage -> Blue Curacao
+'{ "type":"food", "name":"Sparkling Blue", "description":"Blue Curacao, Lemonade", "price":"229" },' +
+
+// PRICE UPDATED: 199 -> 229
+'{ "type":"food", "name":"Strawberry Margarita", "description":"Drink Made With Strawberries Crush, Orange And Lime Juices", "price":"229" },' +
+
+// PRICE UPDATED: 199 -> 229
+'{ "type":"food", "name":"Fruit Punch", "description":"Mock tail Blended With Vanilla Ice Cream, Mixed Fruit Garnished With Fresh Pomegranate", "price":"229" },' +
+
+// PRICE UPDATED: 199 -> 229
+// NAME CORRECTED: Cindrella -> Cinderella
+'{ "type":"food", "name":"Cinderella", "description":"Mix With Orange Juice, Pineapple Juice & Lemonade", "price":"229" },' +
+
 '{ "type":"food", "name":"Cold Coffee", "description":"", "price":"199" },' +
+
 '{ "type":"food", "name":"Shake [Choose Your Flavour]", "description":"Vanilla, Chocolate, Strawberry, Mango", "price":"199" },' +
+
 '{ "type":"food", "name":"Lassi", "description":"", "price":"199" },' +
+
 '{ "type":"food", "name":"Butter Milk [Chach]", "description":"", "price":"149" },' +
+
 '{ "type":"food", "name":"Masala Soft Drinks", "description":"", "price":"99" },' +
+
 '{ "type":"food", "name":"Aerated Drinks", "description":"", "price":"99" },' +
+
 '{ "type":"food", "name":"Fresh Lime Soda", "description":"", "price":"99" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"RED BULL", "description":"", "price":"250" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"TONIC WATER", "description":"", "price":"120" },' +
+
+// NEW ITEM
+'{ "type":"food", "name":"GINGER ALE", "description":"", "price":"120" },' +
+
 '{ "type":"food", "name":"Gondhoraj Lebur Sorbot", "description":"", "price":"99" },' +
+
 '{ "type":"food", "name":"Package Drinking Water", "description":"", "price":"39" },' +
 
 '{ "type":"separator", "description":"HOT BEVERAGE" },' +
+
 '{ "type":"food", "name":"Tea", "description":"Ginger, Lemon, Black", "price":"49" },' +
+
 '{ "type":"food", "name":"Masala Tea", "description":"", "price":"49" },' +
+
 '{ "type":"food", "name":"Coffee", "description":"", "price":"49" }' +
 
 
