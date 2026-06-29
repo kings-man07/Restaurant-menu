@@ -356,22 +356,14 @@ const drinks = JSON.parse(
 
 // PRICE UPDATED: 350 -> 449
 '{ "type":"food", "name":"JW. DOUBLE BLACK", "description":"", "price":"449" },' +
+// PRICE UPDATED: 300 -> 399
+'{ "type":"food", "name":"JW. BLACK LABEL", "description":"", "price":"399" },' +
 
 // PRICE UPDATED: 350 -> 399
 '{ "type":"food", "name":"CHIVAS REGAL", "description":"", "price":"399" },' +
 
-// PRICE UPDATED: 300 -> 399
-'{ "type":"food", "name":"JW. BLACK LABEL", "description":"", "price":"399" },' +
-
-// PRICE UPDATED: 280 -> 269
-'{ "type":"food", "name":"BALLANTINE’S", "description":"", "price":"269" },' +
-
-// REMOVED FROM NEW MENU
-// '{ "type":"food", "name":"BLACK & WHITE 12 YR", "description":"", "price":"250" },' +
-
 // NEW ITEM
 '{ "type":"food", "name":"100 PIPERS 12 YR", "description":"", "price":"349" },' +
-
 // PRICE UPDATED: 240 -> 319
 '{ "type":"food", "name":"TEACHER’S 50", "description":"", "price":"319" },' +
 
@@ -381,17 +373,27 @@ const drinks = JSON.parse(
 // NEW ITEM
 '{ "type":"food", "name":"JW. BLONDE", "description":"", "price":"299" },' +
 
+
+// PRICE UPDATED: 180 -> 279
+'{ "type":"food", "name":"TEACHER’S HIGHLAND", "description":"", "price":"279" },' +
+
+// REMOVED FROM NEW MENU
+// '{ "type":"food", "name":"BLACK & WHITE 12 YR", "description":"", "price":"250" },' +
+
+
+// PRICE UPDATED: 280 -> 269
+'{ "type":"food", "name":"BALLANTINE’S", "description":"", "price":"269" },' +
+
 // PRICE UPDATED: 199 -> 249
 '{ "type":"food", "name":"J&B", "description":"", "price":"249" },' +
 
 // PRICE UPDATED: 180 -> 249
 '{ "type":"food", "name":"JW. RED LABEL", "description":"", "price":"249" },' +
 
-// PRICE UPDATED: 180 -> 279
-'{ "type":"food", "name":"TEACHER’S HIGHLAND", "description":"", "price":"279" },' +
 
 // PRICE UPDATED: 180 -> 239
 '{ "type":"food", "name":"BLACK & WHITE", "description":"", "price":"239" },' +
+
 
 // PRICE UPDATED: 170 -> 239
 '{ "type":"food", "name":"100 PIPPERS", "description":"", "price":"239" },' +
@@ -431,14 +433,16 @@ const drinks = JSON.parse(
 // REMOVED FROM NEW MENU
 // '{ "type":"food", "name":"STERLING RESRVE B-10", "description":"", "price":"150" },' +
 
-// PRICE UPDATED: 150 -> 139
-'{ "type":"food", "name":"SIGNATURE", "description":"", "price":"139" },' +
+
 
 // PRICE UPDATED: 150 -> 159
 '{ "type":"food", "name":"BLENDERS PRIDE RESERVE", "description":"", "price":"159" },' +
 
 // PRICE UPDATED: 130 -> 159
 '{ "type":"food", "name":"ANTIQUETY BLUE", "description":"", "price":"159" },' +
+
+// PRICE UPDATED: 150 -> 139
+'{ "type":"food", "name":"SIGNATURE", "description":"", "price":"139" },' +
 
 // PRICE UPDATED: 130 -> 119
 '{ "type":"food", "name":"BLENDERS PRIDE", "description":"", "price":"119" },' +
@@ -546,10 +550,13 @@ const drinks = JSON.parse(
 // REMOVED FROM NEW MENU
 // '{ "type":"food", "name":"BIRA WHITE (330 ML)", "description":"", "price":"280" },' +
 
-// PRICE UPDATED: 220 -> 249
-'{ "type":"food", "name":"L.AB BACARDI BREEZER", "description":"", "price":"249" },' +
+'{ "type":"separator", "description":"L.A.B" },' +
 
-'{ "type":"separator", "description":"RED WINE GLASS / BOTTLE" },' +
+
+// PRICE UPDATED: 220 -> 249
+'{ "type":"food", "name":"BACARDI BREEZER", "description":"", "price":"249" },' +
+
+'{ "type":"separator", "description":"RED WINE" },' +
 
 // PRICE UPDATED: 300 / 1900 -> 349 / 2189
 '{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"349 / 2189" },' +
@@ -557,7 +564,7 @@ const drinks = JSON.parse(
 // PRICE UPDATED: 460 / 2750 -> 529 / 3159
 '{ "type":"food", "name":"IMPORTED", "description":"", "price":"529 / 3159" },' +
 
-'{ "type":"separator", "description":"WHITE WINE GLASS / BOTTLE" },' +
+'{ "type":"separator", "description":"WHITE WINE" },' +
 
 // PRICE UPDATED: 300 / 1900 -> 349 / 2189
 '{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"349 / 2189" },' +
