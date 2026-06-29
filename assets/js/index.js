@@ -559,7 +559,7 @@ const drinks = JSON.parse(
 '{ "type":"separator", "description":"RED WINE" },' +
 
 // PRICE UPDATED: 300 / 1900 -> 349 / 2189
-'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"349 / 2189" },' +
+'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"349" },' +
 
 // PRICE UPDATED: 460 / 2750 -> 529 / 3159
 '{ "type":"food", "name":"IMPORTED", "description":"", "price":"529 / 3159" },' +
