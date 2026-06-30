@@ -349,15 +349,15 @@ const drinks = JSON.parse(
 '{ "type":"separator", "description":"SCOTCH WHISKY (30 ML)" },' +
 
 // PRICE UPDATED: 1200 -> 1999
-'{ "type":"food", "name":"J W BLUE LABLE", "description":"", "price":"1999" },' +
+'{ "type":"food", "name":"JW BLUE LABEL", "description":"", "price":"1999" },' +
 
 // NEW ITEM
-'{ "type":"food", "name":"JW. GOLD LABEL", "description":"", "price":"629" },' +
+'{ "type":"food", "name":"JW GOLD LABEL", "description":"", "price":"629" },' +
 
 // PRICE UPDATED: 350 -> 449
-'{ "type":"food", "name":"JW. DOUBLE BLACK", "description":"", "price":"449" },' +
+'{ "type":"food", "name":"JW DOUBLE BLACK", "description":"", "price":"449" },' +
 // PRICE UPDATED: 300 -> 399
-'{ "type":"food", "name":"JW. BLACK LABEL", "description":"", "price":"399" },' +
+'{ "type":"food", "name":"JW BLACK LABEL", "description":"", "price":"399" },' +
 
 // PRICE UPDATED: 350 -> 399
 '{ "type":"food", "name":"CHIVAS REGAL", "description":"", "price":"399" },' +
@@ -371,7 +371,7 @@ const drinks = JSON.parse(
 '{ "type":"food", "name":"BLACK DOG GOLD RESERVE", "description":"", "price":"309" },' +
 
 // NEW ITEM
-'{ "type":"food", "name":"JW. BLONDE", "description":"", "price":"299" },' +
+'{ "type":"food", "name":"JW BLONDE", "description":"", "price":"299" },' +
 
 
 // PRICE UPDATED: 180 -> 279
@@ -388,7 +388,7 @@ const drinks = JSON.parse(
 '{ "type":"food", "name":"J&B", "description":"", "price":"249" },' +
 
 // PRICE UPDATED: 180 -> 249
-'{ "type":"food", "name":"JW. RED LABEL", "description":"", "price":"249" },' +
+'{ "type":"food", "name":"JW RED LABEL", "description":"", "price":"249" },' +
 
 
 // PRICE UPDATED: 180 -> 239
@@ -396,7 +396,7 @@ const drinks = JSON.parse(
 
 
 // PRICE UPDATED: 170 -> 239
-'{ "type":"food", "name":"100 PIPPERS", "description":"", "price":"239" },' +
+'{ "type":"food", "name":"100 PIPERS", "description":"", "price":"239" },' +
 
 // NEW ITEM
 '{ "type":"food", "name":"BLACK DOG", "description":"", "price":"229" },' +
@@ -408,7 +408,7 @@ const drinks = JSON.parse(
 // '{ "type":"food", "name":"BLACK DOG CENTENARY", "description":"", "price":"170" },' +
 
 // PRICE UPDATED: 170 -> 199
-'{ "type":"food", "name":"WILLIAM LAWSONS", "description":"", "price":"199" },' +
+'{ "type":"food", "name":"WILLIAM LAWSON’S", "description":"", "price":"199" },' +
 
 // PRICE UPDATED: 170 -> 199
 '{ "type":"food", "name":"PASSPORT", "description":"", "price":"199" },' +
@@ -421,7 +421,7 @@ const drinks = JSON.parse(
 '{ "type":"separator", "description":"TENNESSE WHISKY (30 ML)" },' +
 
 // PRICE UPDATED: 299 -> 399
-'{ "type":"food", "name":"JACK DANIELS", "description":"", "price":"399" },' +
+'{ "type":"food", "name":"JACK DANIEL’S", "description":"", "price":"399" },' +
 
 '{ "type":"separator", "description":"IRISH WHISKY (30ml)" },' +
 
@@ -439,7 +439,7 @@ const drinks = JSON.parse(
 '{ "type":"food", "name":"BLENDERS PRIDE RESERVE", "description":"", "price":"159" },' +
 
 // PRICE UPDATED: 130 -> 159
-'{ "type":"food", "name":"ANTIQUETY BLUE", "description":"", "price":"159" },' +
+'{ "type":"food", "name":"ANTIQUITY BLUE", "description":"", "price":"159" },' +
 
 // PRICE UPDATED: 150 -> 139
 '{ "type":"food", "name":"SIGNATURE", "description":"", "price":"139" },' +
@@ -510,7 +510,7 @@ const drinks = JSON.parse(
 '{ "type":"food", "name":"SAMBUCA", "description":"", "price":"299" },' +
 
 // PRICE UPDATED: 200 -> 299
-'{ "type":"food", "name":"BAILEY’S", "description":"", "price":"299" },' +
+'{ "type":"food", "name":"BAILEYS", "description":"", "price":"299" },' +
 
 // NEW ITEM
 '{ "type":"food", "name":"JAGERMEISTER", "description":"", "price":"419" },' +
@@ -556,15 +556,15 @@ const drinks = JSON.parse(
 // PRICE UPDATED: 220 -> 249
 '{ "type":"food", "name":"BACARDI BREEZER", "description":"", "price":"249" },' +
 
-'{ "type":"separator", "description":"RED WINE" },' +
+'{ "type":"separator", "description":"RED WINE ( GLASS / BOTTLE )" },' +
 
 // PRICE UPDATED: 300 / 1900 -> 349 / 2189
-'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"349" },' +
+'{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"349 / 2189" },' +
 
 // PRICE UPDATED: 460 / 2750 -> 529 / 3159
 '{ "type":"food", "name":"IMPORTED", "description":"", "price":"529 / 3159" },' +
 
-'{ "type":"separator", "description":"WHITE WINE" },' +
+'{ "type":"separator", "description":"WHITE WINE ( GLASS / BOTTLE )" },' +
 
 // PRICE UPDATED: 300 / 1900 -> 349 / 2189
 '{ "type":"food", "name":"HOUSE WINE", "description":"", "price":"349 / 2189" },' +
